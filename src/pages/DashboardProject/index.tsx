@@ -11,7 +11,7 @@ import UpcomingSchedules from './UpcomingSchedules';
 import Widgets from './Widgets';
 
 const DashboardProject = () => {
-    document.title = "Projects | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Projects | Swipe36 ";
     return (
         <React.Fragment>
             <div className="page-content">

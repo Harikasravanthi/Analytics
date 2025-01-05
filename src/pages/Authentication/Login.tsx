@@ -87,7 +87,7 @@ const Login = (props: any) => {
         }
     }, [dispatch, errorMsg]);
 
-    document.title = "Basic SignIn | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Basic SignIn | Swipe36 ";
 
     return (
         <React.Fragment>

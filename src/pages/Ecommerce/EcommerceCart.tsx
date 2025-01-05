@@ -17,7 +17,7 @@ import {
 } from "reactstrap";
 
 const EcommerceCart = () => {
-  document.title = "Shopping Cart | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Shopping Cart | Swipe36 ";
 
   const [productList, setproductList] = useState(shoppingCart);
   const [charge, setCharge] = useState<any>(0);

@@ -24,7 +24,7 @@ import classnames from "classnames";
 import BreadCrumb from "../../../Components/Common/BreadCrumb";
 
 const FormWizard = () => {
-  document.title = "Wizard | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Wizard | Swipe36 ";
   const [activeTab, setactiveTab] = useState<number>(1);
   const [activeArrowTab, setactiveArrowTab] = useState(4);
   const [activeVerticalTab, setactiveVerticalTab] = useState(7);

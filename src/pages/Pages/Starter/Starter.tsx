@@ -3,7 +3,7 @@ import { Col, Container, Row } from 'reactstrap';
 import BreadCrumb from '../../../Components/Common/BreadCrumb';
 
 const Starter = () => {
-  document.title = "Starter | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Starter | Swipe36 ";
   return (
     <React.Fragment>
       <div className="page-content">

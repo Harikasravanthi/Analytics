@@ -7,7 +7,7 @@ import { Col, Container, Row } from 'reactstrap'
 
 const BlogGridView = () => {
 
-    document.title = "Grid View | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Grid View | Swipe36 ";
 
      //pagination
      const [currentPage, setCurrentPage] = useState(1);

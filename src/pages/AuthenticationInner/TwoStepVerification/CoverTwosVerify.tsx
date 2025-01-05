@@ -6,7 +6,7 @@ import { Button, Card, Col, Container, Row } from 'reactstrap';
 import AuthSlider from '../authCarousel';
 
 const CoverTwosVerify = () => {
-    document.title = "Two Step Verification | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Two Step Verification | Swipe36 ";
 
     const getInputElement = (index : any) : HTMLInputElement => {
         return document.getElementById('digit' + index + '-input') as HTMLInputElement;

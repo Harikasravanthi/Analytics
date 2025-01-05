@@ -16,7 +16,7 @@ import logosm from "../../../assets/images/logo-sm.png";
 import { BootstrapToastsExample, ToastPlacementExample, BorderIconExample, ToastifyExample } from './UiNotificationsCode';
 
 const UiNotifications = () => {
-    document.title = "Notifications | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Notifications | Swipe36 ";
 
     const [toast1, setToast1] = useState<boolean>(true);
     const [toast2, setToast2] = useState<boolean>(true);

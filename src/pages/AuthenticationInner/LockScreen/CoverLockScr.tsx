@@ -24,7 +24,7 @@ const CoverLockScreen = () => {
         }
     });
 
-    document.title = "Lock Screen | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Lock Screen | Swipe36 ";
     return (
         <React.Fragment>
 

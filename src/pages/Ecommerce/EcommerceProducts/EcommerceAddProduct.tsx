@@ -46,7 +46,7 @@ import "filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css";
 registerPlugin(FilePondPluginImageExifOrientation, FilePondPluginImagePreview);
 
 const EcommerceAddProduct = () => {
-  document.title = "Create Product | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Create Product | Swipe36 ";
 
   const history = useNavigate();
   const dispatch:any = useDispatch();

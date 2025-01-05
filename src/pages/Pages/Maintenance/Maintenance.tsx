@@ -7,7 +7,7 @@ import ParticlesAuth from "../../../pages/AuthenticationInner/ParticlesAuth";
 import maintenanceImg from '../../../assets/images/maintenance.png';
 
 const Maintenance = () => {
-    document.title = "Maintenance | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Maintenance | Swipe36 ";
     return (
         <React.Fragment>
             <ParticlesAuth>

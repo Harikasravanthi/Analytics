@@ -115,7 +115,7 @@ const InvoiceCreate = () => {
 
 
 
-  document.title = "Create Invoice | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Create Invoice | Swipe36 ";
 
   const validation :any= useFormik({
     enableReinitialize: true,

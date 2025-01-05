@@ -5,7 +5,7 @@ import { Card, CardBody, Col, Container, Row } from "reactstrap";
 import BreadCrumb from '../../../Components/Common/BreadCrumb';
 
 const Materialdesign = () => {
-  document.title = "Material Design Icons | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Material Design Icons | Swipe36 ";
   return (
     <React.Fragment>
       <div className="page-content">

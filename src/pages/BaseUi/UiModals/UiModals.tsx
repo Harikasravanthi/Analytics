@@ -18,7 +18,7 @@ import paymentImg from "../../../assets/images/modals/success-payment.png";
 import authbg from "../../../assets/images/auth-one-bg.jpg";
 
 const UiModals = () => {
-    document.title = "Modals | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Modals | Swipe36 ";
 
     const [modal_standard, setmodal_standard] = useState<boolean>(false);
     function tog_standard() {

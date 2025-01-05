@@ -35,7 +35,7 @@ import avtarImage6 from '../../../assets/images/users/avatar-6.jpg';
 
 
 const BasicTables = () => {
-    document.title = "Basic Tables | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Basic Tables | Swipe36 ";
 
     return (
         <React.Fragment>

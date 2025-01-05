@@ -9,7 +9,7 @@ import BreadCrumb from '../../../Components/Common/BreadCrumb';
 import { VerticalStartExample, VerticalCenterExample, VerticalEndExample, AlignSelfExample, HorizontalAlignExample } from "./UiGridCode";
 
 const UiGrid = () => {
-    document.title = "Grid | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Grid | Swipe36 ";
     return (
         <React.Fragment>
             <UiContent />

@@ -460,7 +460,7 @@ const CrmContacts = () => {
   // Export Modal
   const [isExportCSV, setIsExportCSV] = useState<boolean>(false);
 
-  document.title = "Contacts | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Contacts | Swipe36 ";
   return (
     <React.Fragment>
       <div className="page-content">

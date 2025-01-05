@@ -4,7 +4,7 @@ import BreadCrumb from '../../../Components/Common/BreadCrumb';
 import Select from "react-select";
 
 const Select2 = () => {
-    document.title = "Select2 | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Select2 | Swipe36 ";
 
     const [sortBy, setsortBy] = useState<any>(null);
     const [selectMulti, setselectMulti] = useState<any>(null);

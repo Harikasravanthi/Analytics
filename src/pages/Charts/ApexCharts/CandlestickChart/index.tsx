@@ -11,7 +11,7 @@ import {
 } from "./CandlestickChart";
 
 const CandlestickChart = () => {
-    document.title = "Candlestick Charts | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Candlestick Charts | Swipe36 ";
     return (
         <React.Fragment>
             <div className="page-content">

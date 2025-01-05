@@ -10,7 +10,7 @@ import RecomendedJobs from "./RecomendedJobs";
 import Widgets from "./Widgets";
 
 const DashboardJobs = () => {
-  document.title = "Jobs Dashboard | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Jobs Dashboard | Swipe36 ";
 
   return (
     <React.Fragment>

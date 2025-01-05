@@ -18,7 +18,7 @@ import avatar8 from "../../../assets/images/users/avatar-8.jpg";
 import { SingleButtonDropdownExample, ColorDropdownExample, SplitButtonDropdownExample, SizingDropdownExample, DarkDropdownExample, AlignDropdownExample, OptionDropdownExample, AutoCloseDropdownExample, MenuItemDropdownExample, MenuContentDropdownExample, NotificationDropdownExample } from './UiDropdownsCode';
 
 const UiDropdowns = () => {
-    document.title = "Dropdowns | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Dropdowns | Swipe36 ";
     // Default Tabs
     const [activeTab, setactiveTab] = useState<any>("1");
     const toggle = (tab:any) => {

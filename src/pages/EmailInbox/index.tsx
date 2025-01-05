@@ -3,7 +3,7 @@ import { Container } from 'reactstrap';
 import EmailToolbar from './EmailToolbar';
 
 const MailInbox = () => {
-    document.title = "Mailbox | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Mailbox | Swipe36 ";
     return (
         <React.Fragment>
             <div className="page-content">

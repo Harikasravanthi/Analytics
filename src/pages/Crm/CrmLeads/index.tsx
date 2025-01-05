@@ -433,7 +433,7 @@ const CrmLeads = () => {
     [handleLeadClick, checkedAll]
   );
 
-  document.title = "Leads | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Leads | Swipe36 ";
 
   return (
     <React.Fragment>

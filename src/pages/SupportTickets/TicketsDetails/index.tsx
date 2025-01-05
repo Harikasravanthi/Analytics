@@ -7,7 +7,7 @@ import TicketDetails from './TicketDetails';
 
 
 const TicketsDetaiks = () => {
-    document.title = "Ticket Details | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Ticket Details | Swipe36 ";
     return (
         <React.Fragment>
             <div className="page-content">

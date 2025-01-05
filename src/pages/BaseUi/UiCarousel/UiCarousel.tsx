@@ -17,7 +17,7 @@ import SlideDark from './CarouselTypes/slideDark';
 import { SlideOnlyExample, WithControlExample, WithIndicatorExample, WithCaptionExample, CrossFadeExample, InduvidualIntervalExample, DisableTouchExample, DarkVariantExample } from './UiCarouselCode';
 
 const UiCarousel = () => {
-    document.title = "Carousel | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Carousel | Swipe36 ";
     return (
         <React.Fragment>
             <UiContent />

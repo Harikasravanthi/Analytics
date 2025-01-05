@@ -75,7 +75,7 @@ interface ImgData {
 }
 
 const ToDoList = () => {
-    document.title = "To Do Lists | Swipe36 - React Admin & Dashboard Template";
+    document.title = "To Do Lists | Swipe36 ";
 
     const dispatch: any = useDispatch();
 

@@ -7,7 +7,7 @@ import BreadCrumb from '../../../Components/Common/BreadCrumb';
 import { HtmlHighlightExample, CssHighlightExample, JavaScriptExample } from './UiHighlightCode';
 
 const UiHighlight = () => {
-    document.title = "Highlight | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Highlight | Swipe36 ";
     return (
         <React.Fragment>
             <div className="page-content">

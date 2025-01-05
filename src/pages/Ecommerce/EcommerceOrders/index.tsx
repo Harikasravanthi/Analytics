@@ -457,7 +457,7 @@ const EcommerceOrders = () => {
   // Export Modal
   const [isExportCSV, setIsExportCSV] = useState<boolean>(false);
 
-  document.title = "Orders | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Orders | Swipe36 ";
   return (
     <div className="page-content">
       <ExportCSVModal

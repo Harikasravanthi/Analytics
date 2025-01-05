@@ -40,7 +40,7 @@ const FormRangeSlider = () => {
       <div className="page-content">
 
         <title>
-          Range Slider | Swipe36 - React Admin & Dashboard Template
+          Range Slider | Swipe36 
         </title>
 
         <Container fluid>

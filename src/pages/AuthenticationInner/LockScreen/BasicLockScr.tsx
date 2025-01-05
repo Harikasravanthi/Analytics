@@ -24,7 +24,7 @@ const BasicLockScreen = () => {
             // console.log(values);
         }
     });
-    document.title = "Lock Screen | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Lock Screen | Swipe36 ";
     return (
         <React.Fragment>
             <div className="auth-page-content">

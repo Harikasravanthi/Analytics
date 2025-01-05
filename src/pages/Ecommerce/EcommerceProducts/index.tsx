@@ -324,7 +324,7 @@ const EcommerceProducts = (props: any) => {
   ],
     []
   );
-  document.title = "Products | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Products | Swipe36 ";
 
   return (
     <div className="page-content">

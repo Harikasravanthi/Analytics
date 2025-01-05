@@ -28,7 +28,7 @@ import { useFormik } from "formik";
 import { createSelector } from 'reselect';
 
 const Team = () => {
-    document.title = "Team | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Team | Swipe36 ";
 
     const dispatch: any = useDispatch();
 

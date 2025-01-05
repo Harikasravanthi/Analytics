@@ -52,7 +52,7 @@ const ForgetPasswordPage = (props:any) => {
     forgetError, forgetSuccessMsg
   } = useSelector(selectLayoutProperties);
 
-  document.title = "Reset Password | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Reset Password | Swipe36 ";
 
   return (
     <ParticlesAuth>

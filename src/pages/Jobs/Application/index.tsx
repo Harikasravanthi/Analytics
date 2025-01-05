@@ -46,7 +46,7 @@ import { useFormik } from "formik";
 import ExportCSVModal from "Components/Common/ExportCSVModal";
 
 const Application = () => {
-  document.title = "Application | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Application | Swipe36 ";
 
   const option = [
     {

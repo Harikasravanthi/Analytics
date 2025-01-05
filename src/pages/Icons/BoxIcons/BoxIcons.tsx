@@ -3,7 +3,7 @@ import { Row, Col, Card, CardBody, Container, CardHeader } from "reactstrap";
 import BreadCrumb from '../../../Components/Common/BreadCrumb';
 
 const IconBoxicons = () => {
-  document.title = "Box Icons | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Box Icons | Swipe36 ";
   return (
     <React.Fragment>
       <div className="page-content">

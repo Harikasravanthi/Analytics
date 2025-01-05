@@ -316,7 +316,7 @@ const Calender = () => {
     }
   };
 
-  document.title = "Calendar | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Calendar | Swipe36 ";
   return (
     <React.Fragment>
       <DeleteModal

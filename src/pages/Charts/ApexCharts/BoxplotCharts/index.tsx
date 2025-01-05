@@ -9,7 +9,7 @@ import {
 } from "./BoxplotCharts";
 
 const BoxplotCharts = () => {
-    document.title = "Boxplot Charts | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Boxplot Charts | Swipe36 ";
     return (
         <React.Fragment>
             <div className="page-content">

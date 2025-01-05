@@ -4,7 +4,7 @@ import BreadCrumb from '../../../../Components/Common/BreadCrumb';
 import {SimpleRadar,MultipleRadar,PolygonRadar} from './RadarCharts';
 
 const RadarCharts = () => {
-    document.title = "Radar Charts | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Radar Charts | Swipe36 ";
     return (
         <div className="page-content">
             <Container fluid>

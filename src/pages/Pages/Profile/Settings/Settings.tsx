@@ -9,7 +9,7 @@ import progileBg from '../../../../assets/images/profile-bg.jpg';
 import avatar1 from '../../../../assets/images/users/avatar-1.jpg';
 
 const Settings = () => {
-    document.title = "Profile Settings | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Profile Settings | Swipe36 ";
     const [activeTab, setActiveTab] = useState("1");
 
     const tabChange = (tab:any) => {

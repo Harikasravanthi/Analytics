@@ -283,7 +283,7 @@ const Chat = () => {
     setcurMessage(curMessage + event.emoji); // Use emojiObject.emoji to get the selected emoji
   };
 
-  document.title = "Chat | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Chat | Swipe36 ";
 
   return (
     <React.Fragment>

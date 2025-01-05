@@ -5,7 +5,7 @@ import BreadCrumb from '../../../Components/Common/BreadCrumb';
 
 
 const FeatherIcons = () => {
-    document.title = "Feather Icons | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Feather Icons | Swipe36 ";
     return (
         <React.Fragment>
             <div className="page-content">

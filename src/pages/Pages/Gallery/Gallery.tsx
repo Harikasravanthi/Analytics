@@ -11,7 +11,7 @@ import "yet-another-react-lightbox/styles.css";
 
 const Gallery = () => {
 
-  document.title = "Gallery | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Gallery | Swipe36 ";
 
   const [displayCategory, setCategory] = useState<string>("All");
   const [index, setIndex] = useState<any>(-1);

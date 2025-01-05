@@ -11,7 +11,7 @@ import UpcomingActivities from './UpcomingActivities';
 import Widgets from './Widgets';
 
 const DashboardCrm = () => {
-    document.title = "CRM | Swipe36 - React Admin & Dashboard Template";
+    document.title = "CRM | Swipe36 ";
     return (
         <React.Fragment>
             <div className="page-content">

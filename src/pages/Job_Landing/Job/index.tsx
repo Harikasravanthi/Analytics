@@ -10,7 +10,7 @@ import Navbar from "./Navbar";
 import Process from "./Process";
 
 const JobLanding = () => {
-  document.title = "Job Landing | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Job Landing | Swipe36 ";
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });

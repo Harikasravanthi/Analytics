@@ -10,7 +10,7 @@ import {
 
 
 const HeatmapCharts = () => {
-    document.title = "Heatmap Charts | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Heatmap Charts | Swipe36 ";
     return (
         <React.Fragment>
             <div className="page-content">

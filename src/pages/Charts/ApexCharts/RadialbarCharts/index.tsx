@@ -4,7 +4,7 @@ import BreadCrumb from '../../../../Components/Common/BreadCrumb';
 import { SimpleRadialbar, MultipleRadialbar, CircleRadialbar, GradientCircleRadialbar, StrokedCircleRadial, SemiCircularRadial, ImageRadialbar } from './RadialbarCharts';
 
 const RadialbarCharts = () => {
-    document.title = "Radialbar Charts | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Radialbar Charts | Swipe36 ";
     return (
         <div className="page-content">
             <Container fluid>

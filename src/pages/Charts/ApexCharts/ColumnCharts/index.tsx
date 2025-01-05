@@ -18,7 +18,7 @@ import {
 } from "./ColumnCharts";
 
 const ColumnCharts = () => {
-    document.title = "Column Charts | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Column Charts | Swipe36 ";
     return (
         <React.Fragment>
             <div className="page-content">

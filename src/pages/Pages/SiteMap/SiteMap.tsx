@@ -4,7 +4,7 @@ import BreadCrumb from '../../../Components/Common/BreadCrumb';
 import { Link } from 'react-router-dom';
 
 const SiteMap = () => {
-    document.title = "SiteMap | Swipe36 - React Admin & Dashboard Template";
+    document.title = "SiteMap | Swipe36 ";
     return (
         <div>
             <div className="page-content">

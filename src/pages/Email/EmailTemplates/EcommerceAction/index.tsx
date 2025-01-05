@@ -6,7 +6,7 @@ import FeedbackAction from "./FeedbackAction";
 import RatingTemplate from "./RatingTemplate";
 
 const index = () => {
-    document.title = "Invoice Action | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Invoice Action | Swipe36 ";
     return (
         <React.Fragment>
             <div className="page-content">

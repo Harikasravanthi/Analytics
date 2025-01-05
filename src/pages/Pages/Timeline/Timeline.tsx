@@ -30,7 +30,7 @@ import small9 from "../../../assets/images/small/img-9.jpg";
 const Timeline = () => {
     
     const [thumbsSwiper] = useState(null);
-  document.title = "Timeline | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Timeline | Swipe36 ";
     return (
         <React.Fragment>
             <div className="page-content">

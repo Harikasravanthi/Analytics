@@ -43,7 +43,7 @@ const SimplePage = () => {
         }
     };
 
-    document.title = "Profile | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Profile | Swipe36 ";
     return (
         <React.Fragment>
             <div className="page-content">

@@ -5,7 +5,7 @@ const Offlinepage = () => {
     const refresh = () => {
         window.location.reload();
     }
-    document.title = "Offline Page | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Offline Page | Swipe36 ";
     return (
         <React.Fragment>
             <div className="auth-page-wrapper auth-bg-cover py-5 d-flex justify-content-center align-items-center min-vh-100">

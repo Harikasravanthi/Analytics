@@ -179,7 +179,7 @@ const EcommerceSellerDetail = () => {
     ],
     []
   );
-  document.title = "Sellers Details | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Sellers Details | Swipe36 ";
 
   return (
     <React.Fragment>

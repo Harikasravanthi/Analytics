@@ -38,7 +38,7 @@ import SellerChats from "./SellerChats";
 import { createSelector } from "reselect";
 
 const EcommerceSellers = () => {
-  document.title = "Sellers | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Sellers | Swipe36 ";
   const dispatch :any = useDispatch();
   const [sellerList, setSellerList] = useState<any>([]);
   const [modal, setModal] = useState<boolean>(false);

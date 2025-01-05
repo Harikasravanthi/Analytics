@@ -5,7 +5,7 @@ import { Card, Col, Container, Row } from 'reactstrap';
 import AuthSlider from '../authCarousel';
 
 const CoverSuccessMsg = () => {
-    document.title = "Success Message | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Success Message | Swipe36 ";
     return (
         <React.Fragment>
             <div className="auth-page-wrapper auth-bg-cover py-5 d-flex justify-content-center align-items-center min-vh-100">

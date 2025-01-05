@@ -17,7 +17,7 @@ import {
 import { Link } from 'react-router-dom';
 
 const AreaCharts = () => {
-    document.title = "Area Charts | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Area Charts | Swipe36 ";
     return (
         <React.Fragment>
             <div className="page-content">

@@ -9,7 +9,7 @@ import PreviewCardHeader from '../../../Components/Common/PreviewCardHeader';
 
 
 const BasicElements = () => {
-    document.title = "Basic Elements | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Basic Elements | Swipe36 ";
     return (
         <React.Fragment>
             <UiContent />

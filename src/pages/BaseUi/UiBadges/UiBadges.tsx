@@ -25,7 +25,7 @@ import {
 } from './UiBadgesCode';
 
 const UiBadges = () => {
-    document.title = "Badges | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Badges | Swipe36 ";
     return (
         <React.Fragment>
             <UiContent />

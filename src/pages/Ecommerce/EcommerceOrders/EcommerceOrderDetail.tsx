@@ -18,7 +18,7 @@ import EcommerceOrderProduct from "./EcommerceOrderProduct";
 import avatar3 from "../../../assets/images/users/avatar-3.jpg";
 
 const EcommerceOrderDetail = (props:any) => {
-  document.title = "Order Details | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Order Details | Swipe36 ";
   const [col1, setcol1] = useState<boolean>(true);
   const [col2, setcol2] = useState<boolean>(true);
   const [col3, setcol3] = useState<boolean>(true);

@@ -418,7 +418,7 @@ const CrmCompanies = () => {
   // Export Modal
   const [isExportCSV, setIsExportCSV] = useState<boolean>(false);
 
-  document.title = "Companies | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Companies | Swipe36 ";
   return (
     <React.Fragment>
       <div className="page-content">

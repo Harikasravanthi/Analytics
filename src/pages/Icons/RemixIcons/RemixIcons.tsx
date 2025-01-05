@@ -31,7 +31,7 @@ const RemixIcons = () => {
     (document.getElementById("all-icon") as HTMLElement).innerHTML = iconData ;
   });
 
-document.title ="Remix Icons | Swipe36 - React Admin & Dashboard Template";
+document.title ="Remix Icons | Swipe36 ";
   return (
     <React.Fragment>
       <div className="page-content">

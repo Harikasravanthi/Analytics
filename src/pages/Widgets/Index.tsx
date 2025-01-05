@@ -11,7 +11,7 @@ import EcommerceWidgets from './EcommerenceWidget';
 import CreditCard from './Creaditcard';
 
 const Widgets = () => {
-    document.title = "Widgets | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Widgets | Swipe36 ";
     return (
         <React.Fragment>
             <div className="page-content">

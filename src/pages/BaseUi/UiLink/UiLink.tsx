@@ -7,7 +7,7 @@ import PreviewCardHeader from '../../../Components/Common/PreviewCardHeader';
 import { ColorExample, DefaultLinkExample, OffsetExample, OpacityExample, OpacityHoverExample, UtilitiesExample, UtilityOpacityExample } from './UiLinkCode';
 
 const UiLink = () => {
-    document.title = "Link | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Link | Swipe36 ";
     return (
         <React.Fragment>
             <UiContent />

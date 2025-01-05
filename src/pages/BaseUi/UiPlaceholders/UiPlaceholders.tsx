@@ -15,7 +15,7 @@ import img2 from "../../../assets/images/small/img-2.jpg";
 import { DefaultPlaceholderExample, WidthExample, SizingExample, ColorExample } from './UiPlaceholdersCode';
 
 const UiPlaceholders = () => {
-    document.title = "Placeholders | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Placeholders | Swipe36 ";
     return (
         <React.Fragment>
             <UiContent />

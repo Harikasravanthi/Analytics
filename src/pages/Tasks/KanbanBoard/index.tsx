@@ -9,7 +9,7 @@ import TasksKanban from './MainPage'
 
 const Kanbanboard = () => {
 
-    document.title = "Kanban Board | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Kanban Board | Swipe36 ";
 
     return (
         <React.Fragment>

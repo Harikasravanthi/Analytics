@@ -5,7 +5,7 @@ import BreadCrumb from "../../../Components/Common/BreadCrumb";
 
 const TermsCondition = () => {
   document.title =
-    "Terms & Condition | Swipe36 - React Admin & Dashboard Template";
+    "Terms & Condition | Swipe36 ";
   return (
     <React.Fragment>
       <div className="page-content">

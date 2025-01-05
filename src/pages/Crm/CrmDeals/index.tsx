@@ -40,7 +40,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { createSelector } from "reselect";
 
 const CrmDeals = () => {
-  document.title = "Deals | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Deals | Swipe36 ";
 
   const dispatch: any = useDispatch();
   const crmdealsData = createSelector(

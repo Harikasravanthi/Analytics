@@ -5,7 +5,7 @@ import Widgets from './Widgets';
 import TicketsData from './TicketsData';
 
 const ListView = () => {
-    document.title = "Tickets List | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Tickets List | Swipe36 ";
     return (
         <React.Fragment>
             <div className="page-content">

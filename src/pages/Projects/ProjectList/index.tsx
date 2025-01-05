@@ -5,7 +5,7 @@ import { Container } from 'reactstrap';
 import List from './List';
 
 const ProjectList = () => {
-    document.title = "Project List | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Project List | Swipe36 ";
     
     return (
         <React.Fragment>

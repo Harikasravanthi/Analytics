@@ -30,7 +30,7 @@ import { orderSummary } from "../../common/data/ecommerce";
 import { Link } from "react-router-dom";
 
 const EcommerceCheckout = () => {
-  document.title = "Checkout | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Checkout | Swipe36 ";
 
   const [selectedCountry, setselectedCountry] = useState<any>(null);
   const [selectedState, setselectedState] = useState<any>(null);

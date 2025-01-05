@@ -7,7 +7,7 @@ import ParticlesAuth from "../ParticlesAuth";
 import logoLight from "../../../assets/images/logo-light.png";
 
 const BasicLogout = () => {
-    document.title = "Log Out | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Log Out | Swipe36 ";
     return (
         <React.Fragment>
             <div className="auth-page-content">

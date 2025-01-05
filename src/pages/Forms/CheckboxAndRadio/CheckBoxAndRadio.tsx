@@ -11,7 +11,7 @@ import {
 
 
 const CheckBoxAndRadio = () => {
-    document.title = "Checkbox & Radio | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Checkbox & Radio | Swipe36 ";
     return (
         <React.Fragment>
             <UiContent />

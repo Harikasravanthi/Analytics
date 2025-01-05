@@ -25,7 +25,7 @@ import { Link } from 'react-router-dom';
 import { ImgRoundedCircleExample, ImgThumbnailsExample, ImgSizesExample, AvatarExample, AvatarGroupExample, FiguresExample, ResponsiveExample } from './UiImagesCode';
 
 const UiImages = () => {
-    document.title = "Images | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Images | Swipe36 ";
     return (
         <React.Fragment>
             <UiContent />

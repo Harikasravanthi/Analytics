@@ -17,7 +17,7 @@ import { jobCompanies } from "../../../common/data/appsJobs";
 import Pagination from "../../../Components/Common/Pagination";
 
 const CompaniesList = () => {
-  document.title = "Companies | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Companies | Swipe36 ";
 
   const [companiesList, setCompaniesList] = useState<any>();
   const [currentPage, setCurrentPage] = useState<any>(1);

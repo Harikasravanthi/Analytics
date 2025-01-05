@@ -6,7 +6,7 @@ import "cleave.js/dist/addons/cleave-phone.in";
 
 
 const Masks = () => {
-  document.title = "Input Masks | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Input Masks | Swipe36 ";
   const [date, setDate] = useState<any>("");
   const [dateFormat, setDateFormat] = useState<any>("");
   const [time, setTime] = useState<any>("");

@@ -333,7 +333,7 @@ const EcommerceCustomers = () => {
   // Export Modal
   const [isExportCSV, setIsExportCSV] = useState<boolean>(false);
 
-  document.title = "Customers | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Customers | Swipe36 ";
   return (
     <React.Fragment>
       <div className="page-content">

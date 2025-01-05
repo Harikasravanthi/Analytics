@@ -9,7 +9,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
 const CoverSignUp = () => {
-    document.title = "Cover SignUp | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Cover SignUp | Swipe36 ";
 
     const [passwordShow, setPasswordShow] = useState<boolean>(false);
 

@@ -317,7 +317,7 @@ const MonthGridCalender = () => {
         }
     };
 
-    document.title = "Month Grid Calendar | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Month Grid Calendar | Swipe36 ";
     return (
         <React.Fragment>
             <DeleteModal

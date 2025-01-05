@@ -7,7 +7,7 @@ import EmailVerifyAction from "./EmailVerifyAction";
 import PasswordChangeAction from "./PasswordChangeAction";
 
 const index = () => {
-    document.title = "Basic Action | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Basic Action | Swipe36 ";
     
     return (
         <React.Fragment>

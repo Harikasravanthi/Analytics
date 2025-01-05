@@ -274,7 +274,7 @@ const InvoiceList = () => {
     [checkedAll]
   );
 
-  document.title = "Invoice List | Swipe36 - React Admin & Dashboard Template";
+  document.title = "Invoice List | Swipe36 ";
 
   return (
     <React.Fragment>

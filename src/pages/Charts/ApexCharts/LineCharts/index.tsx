@@ -19,7 +19,7 @@ import {
 
 
 const LineCharts = () => {
-    document.title = "Line Charts | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Line Charts | Swipe36 ";
     return (
         <React.Fragment>
             <div className="page-content">

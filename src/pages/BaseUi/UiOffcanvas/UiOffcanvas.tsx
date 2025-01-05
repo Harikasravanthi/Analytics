@@ -28,7 +28,7 @@ import img11 from "../../../assets/images/small/img-11.jpg";
 import img12 from "../../../assets/images/small/img-12.jpg";
 
 const UiOffcanvas = () => {
-    document.title = "Offcanvas | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Offcanvas | Swipe36 ";
 
     const [open, setOpen] = useState<boolean>(false);
     const [isTop, setIsTop] = useState<boolean>(false);

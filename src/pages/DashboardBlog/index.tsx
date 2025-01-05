@@ -8,7 +8,7 @@ import RecentArticleTable from './RecentArticleTable'
 
 const DashboardBlog = () => {
 
-  document.title="Blog | Swipe36 - React Admin & Dashboard Template";
+  document.title="Blog | Swipe36 ";
 
   return (
     <React.Fragment>

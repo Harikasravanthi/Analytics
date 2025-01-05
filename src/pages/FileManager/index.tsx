@@ -27,7 +27,7 @@ import { createSelector } from 'reselect';
 
 
 const FileManager = () => {
-    document.title = "File Manager | Swipe36 - React Admin & Dashboard Template";
+    document.title = "File Manager | Swipe36 ";
 
     const dispatch: any = useDispatch();
 

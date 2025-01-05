@@ -9,7 +9,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
 const CoverPasswReset = () => {
-    document.title = "Reset Password | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Reset Password | Swipe36 ";
 
     const validation :any= useFormik({
         enableReinitialize: true,

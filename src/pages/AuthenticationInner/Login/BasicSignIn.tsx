@@ -29,7 +29,7 @@ const BasicSignIn = () => {
             console.log("values", values)
         }
     });
-    document.title = "Basic SignIn | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Basic SignIn | Swipe36 ";
     return (
         <React.Fragment>
             <ParticlesAuth>

@@ -76,7 +76,7 @@ const Register = () => {
 
     }, [dispatch, success, error, history]);
 
-    document.title = "Basic SignUp | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Basic SignUp | Swipe36 ";
 
     return (
         <React.Fragment>

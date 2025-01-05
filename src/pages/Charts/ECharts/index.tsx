@@ -8,7 +8,7 @@ import {
 } from './ECharts';
 
 const Echarts = () => {
-    document.title = "E Charts | Swipe36 - React Admin & Dashboard Template";
+    document.title = "E Charts | Swipe36 ";
     return (
         <div className="page-content">
             <Container fluid>

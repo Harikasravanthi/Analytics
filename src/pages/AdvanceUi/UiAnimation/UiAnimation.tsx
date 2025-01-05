@@ -17,7 +17,7 @@ AOS.init({
     anchorPlacement: 'top-bottom',
 });
 const UiAnimation = () => {
-    document.title = "Animation | Swipe36 - React Admin & Dashboard Template";
+    document.title = "Animation | Swipe36 ";
     return (
         <React.Fragment>
             <div className="page-content">
