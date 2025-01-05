@@ -9,41 +9,13 @@ import DashboardJob from "../pages/DashboardJob/";
 import DashboardProject from "../pages/DashboardProject";
 
 
-//Calendar
-import Calendar from "../pages/Calendar";
-import MonthGrid from "../pages/Calendar/monthGrid";
-
-// Email box
-import MailInbox from "../pages/EmailInbox";
-import BasicAction from "../pages/Email/EmailTemplates/BasicAction";
-import EcommerceAction from "../pages/Email/EmailTemplates/EcommerceAction";
-
-//Chat
-import Chat from "../pages/Chat";
-
-// Project
-import ProjectList from "../pages/Projects/ProjectList";
-import ProjectOverview from "../pages/Projects/ProjectOverview";
-import CreateProject from "../pages/Projects/CreateProject";
-
-//Task
-import TaskDetails from "../pages/Tasks/TaskDetails";
-import TaskList from "../pages/Tasks/TaskList";
-
 //Crm Pages
 import CrmCompanies from "../pages/Crm/CrmCompanies";
 import CrmContacts from "../pages/Crm/CrmContacts";
 import CrmDeals from "../pages/Crm/CrmDeals/index";
 import CrmLeads from "../pages/Crm/CrmLeads/index";
 
-//Invoices
-import InvoiceList from "../pages/Invoices/InvoiceList";
-import InvoiceCreate from "../pages/Invoices/InvoiceCreate";
-import InvoiceDetails from "../pages/Invoices/InvoiceDetails";
 
-// Support Tickets
-import ListView from '../pages/SupportTickets/ListView';
-import TicketsDetails from '../pages/SupportTickets/TicketsDetails';
 
 // //Ecommerce Pages
 import EcommerceProducts from "../pages/Ecommerce/EcommerceProducts/index";
@@ -93,33 +65,13 @@ import UiHighlight from "../pages/AdvanceUi/UiHighlight/UiHighlight";
 import Widgets from '../pages/Widgets/Index';
 
 //Forms
-import BasicElements from "../pages/Forms/BasicElements/BasicElements";
-import FormSelect from "../pages/Forms/FormSelect/FormSelect";
-import FormEditor from "../pages/Forms/FormEditor/FormEditor";
-import CheckBoxAndRadio from "../pages/Forms/CheckboxAndRadio/CheckBoxAndRadio";
-import Masks from "../pages/Forms/Masks/Masks";
-import FileUpload from "../pages/Forms/FileUpload/FileUpload";
-import FormPickers from "../pages/Forms/FormPickers/FormPickers";
-import FormRangeSlider from "../pages/Forms/FormRangeSlider/FormRangeSlider";
-import Formlayouts from "../pages/Forms/FormLayouts/Formlayouts";
-import FormValidation from "../pages/Forms/FormValidation/FormValidation";
-import FormWizard from "../pages/Forms/FormWizard/FormWizard";
-import FormAdvanced from "../pages/Forms/FormAdvanced/FormAdvanced";
-import Select2 from "../pages/Forms/Select2/Select2";
+
 
 //Tables
 import BasicTables from '../pages/Tables/BasicTables/BasicTables';
 import ReactTable from "../pages/Tables/ReactTables";
 
-//Icon pages
-import RemixIcons from "../pages/Icons/RemixIcons/RemixIcons";
-import BoxIcons from "../pages/Icons/BoxIcons/BoxIcons";
-import MaterialDesign from "../pages/Icons/MaterialDesign/MaterialDesign";
-import FeatherIcons from "../pages/Icons/FeatherIcons/FeatherIcons";
-import LineAwesomeIcons from "../pages/Icons/LineAwesomeIcons/LineAwesomeIcons";
 
-//Maps
-import GoogleMaps from "../pages/Maps/GoogleMaps/GoogleMaps";
 
 //AuthenticationInner pages
 import BasicSignIn from '../pages/AuthenticationInner/Login/BasicSignIn';
@@ -186,32 +138,17 @@ import PolarCharts from "../pages/Charts/ApexCharts/PolarCharts";
 import ChartsJs from "../pages/Charts/ChartsJs/index";
 import Echarts from "../pages/Charts/ECharts/index";
 
-//Job pages
-import Statistics from "../pages/Jobs/Statistics";
-import JobList from "../pages/Jobs/JobList/List";
-import JobGrid from "../pages/Jobs/JobList/Grid";
-import JobOverview from "../pages/Jobs/JobList/Overview";
-import CandidateList from "../pages/Jobs/CandidateList/ListView";
-import CandidateGrid from "../pages/Jobs/CandidateList/GridView";
-import NewJobs from "../pages/Jobs/NewJob";
-import JobCategories from "../pages/Jobs/JobCategories";
-import Application from "../pages/Jobs/Application";
-import CompaniesList from "../pages/Jobs/CompaniesList";
-import Apikeys from "../pages/APIKey/index"
 
 import PrivecyPolicy from '../pages/Pages/PrivacyPolicy';
 import TermsCondition from '../pages/Pages/TermsCondition';
-import JobLanding from "../pages/Job_Landing/Job";
+
 
 // User Profile
 import UserProfile from "../pages/Authentication/user-profile";
 
-import FileManager from "../pages/FileManager";
-import ToDoList from "../pages/ToDo";
 import UiLink from "../pages/BaseUi/UiLink/UiLink";
 import RangeArea from "../pages/Charts/ApexCharts/RangeAreaCharts/Index";
 import FunnelChart from "../pages/Charts/ApexCharts/FunnelCharts/index";
-import Kanbanboard from "pages/Tasks/KanbanBoard";
 import DashboardBlog from "pages/DashboardBlog";
 import SlopeCharts from "pages/Charts/ApexCharts/SlopeCharts";
 import BlogListView from "pages/Pages/Blogs/ListView";
@@ -227,9 +164,6 @@ const authProtectedRoutes = [
   { path : "/dashboard-job", component : <DashboardJob /> },
   { path: "/dashboard-blog", component: <DashboardBlog /> },
 
-  // apps
-  { path: "/apps-calendar", component: <Calendar /> },
-  { path: "/apps-calendar-month-grid", component: <MonthGrid /> },
   { path: "/apps-ecommerce-products", component: <EcommerceProducts /> },
   { path: "/apps-ecommerce-product-details", component: <EcommerceProductDetail /> },
   { path: "/apps-ecommerce-add-product", component: <EcommerceAddProduct /> },
@@ -241,42 +175,12 @@ const authProtectedRoutes = [
   { path: "/apps-ecommerce-sellers", component: <EcommerceSellers /> },
   { path: "/apps-ecommerce-seller-details", component: <EcommerceSellerDetail /> },
 
-  { path: "/apps-file-manager", component: <FileManager /> },
-  { path: "/apps-todo", component: <ToDoList /> },
-
-
-  //Chat
-  { path: "/apps-chat", component: <Chat /> },
-
-  //EMail
-  { path: "/apps-mailbox", component: <MailInbox /> },
-  { path: "/apps-email-basic", component: <BasicAction /> },
-  { path: "/apps-email-ecommerce", component: <EcommerceAction /> },
-
-  //Projects
-  { path: "/apps-projects-list", component: <ProjectList /> },
-  { path: "/apps-projects-overview", component: <ProjectOverview /> },
-  { path: "/apps-projects-create", component: <CreateProject /> },
-
-  //Task
-  { path:"/apps-tasks-kanban", component: <Kanbanboard/> },
-  { path: "/apps-tasks-list-view", component: <TaskList /> },
-  { path: "/apps-tasks-details", component: <TaskDetails /> },
 
   //Crm
   { path: "/apps-crm-contacts", component: <CrmContacts /> },
   { path: "/apps-crm-companies", component: <CrmCompanies /> },
   { path: "/apps-crm-deals", component: <CrmDeals /> },
   { path: "/apps-crm-leads", component: <CrmLeads /> },
-
-  //Invoices
-  { path: "/apps-invoices-list", component: <InvoiceList /> },
-  { path: "/apps-invoices-details", component: <InvoiceDetails /> },
-  { path: "/apps-invoices-create", component: <InvoiceCreate /> },
-
-  //Supports Tickets
-  { path: "/apps-tickets-list", component: <ListView /> },
-  { path: "/apps-tickets-details", component: <TicketsDetails /> },
 
   //charts
   { path: "/charts-apex-line", component: <LineCharts /> },
@@ -339,37 +243,12 @@ const authProtectedRoutes = [
   // Widgets
   { path: "/widgets", component: <Widgets /> },
 
-  // Forms
-  { path: "/forms-elements", component: <BasicElements /> },
-  { path: "/forms-select", component: <FormSelect /> },
-  { path: "/forms-editors", component: <FormEditor /> },
-  { path: "/forms-checkboxes-radios", component: <CheckBoxAndRadio /> },
-  { path: "/forms-masks", component: <Masks /> },
-  { path: "/forms-file-uploads", component: <FileUpload /> },
-  { path: "/forms-pickers", component: <FormPickers /> },
-  { path: "/forms-range-sliders", component: <FormRangeSlider /> },
-  { path: "/forms-layouts", component: <Formlayouts /> },
-  { path: "/forms-validation", component: <FormValidation /> },
-  { path: "/forms-wizard", component: <FormWizard /> },
-  { path: "/forms-advanced", component: <FormAdvanced /> },
-  { path: "/forms-select2", component: <Select2 /> },
-
   //Tables
   { path: "/tables-basic", component: <BasicTables /> },
   { path: "/tables-react", component: <ReactTable /> },
 
 
-  //Icons
-  { path: "/icons-remix", component: <RemixIcons /> },
-  { path: "/icons-boxicons", component: <BoxIcons /> },
-  { path: "/icons-materialdesign", component: <MaterialDesign /> },
-  { path: "/icons-feather", component: <FeatherIcons /> },
-  { path: "/icons-lineawesome", component: <LineAwesomeIcons /> },
-
-  //Maps
-  { path: "/maps-google", component: <GoogleMaps /> },
-
-  //Pages
+ //Pages
   { path: "/pages-starter", component: <Starter /> },
   { path: "/pages-profile", component: <SimplePage /> },
   { path: "/pages-profile-settings", component: <Settings /> },
@@ -383,20 +262,6 @@ const authProtectedRoutes = [
   { path: "/pages-blog-list", component: <BlogListView /> },
   { path: "/pages-blog-grid", component: <BlogGridView /> },
   { path: "/pages-blog-overview", component: <PageBlogOverview /> },
-
-  //Job pages
-  { path: "/apps-job-statistics", component: <Statistics /> },
-  { path: "/apps-job-lists", component: <JobList /> },
-  { path: "/apps-job-grid-lists", component: <JobGrid /> },
-  { path: "/apps-job-details", component: <JobOverview /> },
-  { path: "/apps-job-candidate-lists", component: <CandidateList /> },
-  { path: "/apps-job-candidate-grid", component: <CandidateGrid /> },
-  { path: "/apps-job-application", component: <Application /> },
-  { path: "/apps-job-new", component: <NewJobs /> },
-  { path: "/apps-job-companies-lists", component: <CompaniesList /> },
-  { path: "/apps-job-categories", component: <JobCategories /> },
-  { path: "/apps-api-key", component: <Apikeys/> },
-
   { path: "/pages-privacy-policy", component: <PrivecyPolicy /> },
   { path: "/pages-terms-condition", component: <TermsCondition /> },
 
@@ -441,8 +306,6 @@ const publicRoutes = [
   { path: "/auth-500", component: <Error500 /> },
   { path: "/pages-maintenance", component: <Maintenance /> },
   { path: "/pages-coming-soon", component: <ComingSoon /> },
-
-  { path : "/job-landing" , component: <JobLanding /> },
 
   { path: "/auth-pass-change-basic", component: <BasicPasswCreate /> },
   { path: "/auth-pass-change-cover", component: <CoverPasswCreate /> },

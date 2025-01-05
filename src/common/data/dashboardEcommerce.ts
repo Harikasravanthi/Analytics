@@ -21,7 +21,7 @@ const ecomWidgets = [
     {
         id: 1,
         cardColor: "primary",
-        label: "Total Earnings",
+        label: "Monthly Recurring Revenue",
         badge: "ri-arrow-right-up-line",
         badgeClass: "success",
         percentage: "+16.24",
@@ -36,7 +36,7 @@ const ecomWidgets = [
     {
         id: 2,
         cardColor: "secondary",
-        label: "Orders",
+        label: "Net Revenue",
         badge: "ri-arrow-right-down-line",
         badgeClass: "danger",
         percentage: "-3.57",
@@ -52,7 +52,7 @@ const ecomWidgets = [
     {
         id: 3,
         cardColor: "success",
-        label: "Customers",
+        label: "Annual Run Rate",
         badge: "ri-arrow-right-up-line",
         badgeClass: "success",
         percentage: "+29.08",
@@ -67,7 +67,7 @@ const ecomWidgets = [
     {
         id: 4,
         cardColor: "info",
-        label: "My Balance",
+        label: "Lifetime Value ",
         badgeClass: "muted",
         percentage: "+0.00",
         counter: 165.89,
