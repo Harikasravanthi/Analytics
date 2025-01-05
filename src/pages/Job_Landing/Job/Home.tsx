@@ -106,7 +106,7 @@ const Home = () => {
                       </div>
                     </div>
                     <h5 className="fs-15 lh-base mb-0">
-                      Work Inquiry from velzon
+                      Work Inquiry from Swipe36
                     </h5>
                   </div>
                 </Card>

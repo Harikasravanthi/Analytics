@@ -176,7 +176,7 @@ const UiAccordions = () => {
         setcoll9(!coll9);
     };
 
-    document.title = "Accordions | Velzon - React Admin & Dashboard Template";
+    document.title = "Accordions | Swipe36 - React Admin & Dashboard Template";
 
     return (
         <React.Fragment>

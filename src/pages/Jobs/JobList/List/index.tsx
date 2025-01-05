@@ -21,7 +21,7 @@ const JobList = () => {
   useEffect(() => {
     setJobListData(currentdata)
   }, [currentdata]);
-  document.title = "Job Lists | Velzon -  Admin & Dashboard Template";
+  document.title = "Job Lists | Swipe36 -  Admin & Dashboard Template";
   return (
     <React.Fragment>
       <div className="page-content">
@@ -301,7 +301,7 @@ export default JobList;
 // import Pagination from "../../../../Components/Common/Pagination";
 
 // const JobList = () => {
-//   document.title = "Job Lists | Velzon -  Admin & Dashboard Template";
+//   document.title = "Job Lists | Swipe36 -  Admin & Dashboard Template";
 
 //   const [favouritebtn, setFavouritebtn] = useState<boolean>(false)
 

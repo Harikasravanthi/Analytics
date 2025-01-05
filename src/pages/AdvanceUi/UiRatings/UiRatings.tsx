@@ -10,7 +10,7 @@ import Rating from "react-rating";
 import { BasicRaterExample, RaterWithStepExample, CustomMsgExample, ReadOnlyRaterExample, OnHoverExample, ReasetRaterExample } from './UiRatingsCode';
 
 const UiRatings = () => {
-    document.title = "Ratings | Velzon - React Admin & Dashboard Template";
+    document.title = "Ratings | Swipe36 - React Admin & Dashboard Template";
     const [customize, setcustomize] = useState<any>("");
     const [reset, setreset] = useState<any>("");
 

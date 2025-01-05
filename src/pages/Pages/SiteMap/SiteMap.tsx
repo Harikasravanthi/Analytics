@@ -4,7 +4,7 @@ import BreadCrumb from '../../../Components/Common/BreadCrumb';
 import { Link } from 'react-router-dom';
 
 const SiteMap = () => {
-    document.title = "SiteMap | Velzon - React Admin & Dashboard Template";
+    document.title = "SiteMap | Swipe36 - React Admin & Dashboard Template";
     return (
         <div>
             <div className="page-content">
@@ -24,7 +24,7 @@ const SiteMap = () => {
                                                     <ul className="director">
                                                         <li>
                                                             <Link to="#"
-                                                                className="fw-semibold"><span>Velzon Admin</span></Link>
+                                                                className="fw-semibold"><span>Swipe36 Admin</span></Link>
                                                             <ul className="subdirector">
                                                                 <li><Link to="#" className="fw-semibold"><span>Contact Us</span></Link>
                                                                 </li>
@@ -288,7 +288,7 @@ const SiteMap = () => {
                                             <div className="verti-sitemap">
                                                 <ul className="list-unstyled mb-0">
                                                     <li className="p-0 parent-title"><Link to="#"
-                                                        className="fw-medium fs-14">Velzon</Link></li>
+                                                        className="fw-medium fs-14">Swipe36</Link></li>
                                                     <li>
                                                         <div className="first-list">
                                                             <div className="list-wrap">

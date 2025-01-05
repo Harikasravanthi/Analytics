@@ -27,7 +27,7 @@ import { createSelector } from 'reselect';
 
 
 const FileManager = () => {
-    document.title = "File Manager | Velzon - React Admin & Dashboard Template";
+    document.title = "File Manager | Swipe36 - React Admin & Dashboard Template";
 
     const dispatch: any = useDispatch();
 
@@ -714,7 +714,7 @@ const FileManager = () => {
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">Share Path :</th>
-                                                                <td className="share-path">velzon:\Documents\</td>
+                                                                <td className="share-path">Swipe36:\Documents\</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>

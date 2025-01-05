@@ -55,7 +55,7 @@ const TimeTracking = () => {
                                 </tr>
                                 <tr>
                                     <td className="fw-semibold">Project Name</td>
-                                    <td>Velzon - Admin Dashboard</td>
+                                    <td>Swipe36 - Admin Dashboard</td>
                                 </tr>
                                 <tr>
                                     <td className="fw-semibold">Priority</td>
@@ -199,7 +199,7 @@ const TimeTracking = () => {
                                     </div>
                                 </div>
                                 <div className="flex-grow-1 overflow-hidden">
-                                    <h5 className="fs-14 mb-1"><Link to="#" className="text-body text-truncate d-block">Velzon admin.ppt</Link></h5>
+                                    <h5 className="fs-14 mb-1"><Link to="#" className="text-body text-truncate d-block">Swipe36 admin.ppt</Link></h5>
                                     <div className="text-muted">2.4MB</div>
                                 </div>
                                 <div className="flex-shrink-0 ms-2">

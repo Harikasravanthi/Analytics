@@ -24,7 +24,7 @@ import { useFormik } from "formik";
 import ReactValidation from "./ReactValidation";
 
 const FormValidations = () => {
-  document.title = "Validation | Velzon - React Admin & Dashboard Template";
+  document.title = "Validation | Swipe36 - React Admin & Dashboard Template";
   // Form validation
   const validation :any= useFormik({
     // enableReinitialize : use this flag when initial values needs to be changed

@@ -5,7 +5,7 @@ import BreadCrumb from "../../../Components/Common/BreadCrumb";
 import FeatherIcon from "feather-icons-react";
 
 const PrivacyPolicy = () => {
-  document.title = "Privacy Policy | Velzon - React Admin & Dashboard Template";
+  document.title = "Privacy Policy | Swipe36 - React Admin & Dashboard Template";
   return (
     <React.Fragment>
       <div className="page-content">
@@ -45,7 +45,7 @@ const PrivacyPolicy = () => {
                       />
                     </div>
                     <div className="flex-grow-1">
-                      <h5>Privacy Policy for velzon</h5>
+                      <h5>Privacy Policy for Swipe36</h5>
                       <p className="text-muted">
                         At Website Name, accessible at Website.com, one of our
                         main priorities is the privacy of our visitors. This

@@ -23,7 +23,7 @@ interface ImgData {
 }
 
 const CandidateGrid = () => {
-  document.title = "Candidates Grid View | Velzon -  Admin & Dashboard Template";
+  document.title = "Candidates Grid View | Swipe36 -  Admin & Dashboard Template";
 
   const dispatch: any = useDispatch();
 

@@ -115,7 +115,7 @@ const InvoiceCreate = () => {
 
 
 
-  document.title = "Create Invoice | Velzon - React Admin & Dashboard Template";
+  document.title = "Create Invoice | Swipe36 - React Admin & Dashboard Template";
 
   const validation :any= useFormik({
     enableReinitialize: true,
@@ -781,7 +781,7 @@ const InvoiceCreate = () => {
                                   <th scope="row">
                                     Discount{" "}
                                     <small className="text-muted">
-                                      (VELZON15)
+                                      (Swipe3615)
                                     </small>
                                   </th>
                                   <td>

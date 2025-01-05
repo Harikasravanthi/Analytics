@@ -44,7 +44,7 @@ const FormAdvanced = () => {
     id(prev_data_attr - 1);
   }
 
-  document.title = "Form Advanced | Velzon - React Admin & Dashboard Template";
+  document.title = "Form Advanced | Swipe36 - React Admin & Dashboard Template";
 
   const [seletedCountry, setseletedCountry] = useState<any>('');
   const [seletedCountry1, setseletedCountry1] = useState<any>({});

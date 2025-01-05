@@ -115,7 +115,7 @@ const Faqs = () => {
         setcol11(false);
     };
 
-    document.title = "FAQs | Velzon - React Admin & Dashboard Template";
+    document.title = "FAQs | Swipe36 - React Admin & Dashboard Template";
 
     return (
         <React.Fragment>

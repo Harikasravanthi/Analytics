@@ -6,7 +6,7 @@ import Summary from './Summary';
 import TimeTracking from "./TimeTracking";
 
 const TaskDetails = () => {
-    document.title = "Tasks Details | Velzon - React Admin & Dashboard Template";
+    document.title = "Tasks Details | Swipe36 - React Admin & Dashboard Template";
     return (
         <React.Fragment>
             <div className="page-content">

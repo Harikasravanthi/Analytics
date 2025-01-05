@@ -5,7 +5,7 @@ import BreadCrumb from "../../../Components/Common/BreadCrumb";
 
 const TermsCondition = () => {
   document.title =
-    "Terms & Condition | Velzon - React Admin & Dashboard Template";
+    "Terms & Condition | Swipe36 - React Admin & Dashboard Template";
   return (
     <React.Fragment>
       <div className="page-content">
@@ -41,7 +41,7 @@ const TermsCondition = () => {
                 </div>
                 <CardBody className="p-4">
                   <div>
-                    <h5>Welcome to Velzon!</h5>
+                    <h5>Welcome to Swipe36!</h5>
                     <p className="text-muted">
                       These terms and conditions outline the rules and
                       regulations for the use of Company Name's Website, located

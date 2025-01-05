@@ -7,7 +7,7 @@ import logoDark from "../../assets/images/logo-dark.png";
 import logoLight from "../../assets/images/logo-light.png";
 
 const InvoiceDetails = () => {
-  document.title = "Invoice Details | Velzon - React Admin & Dashboard Template";
+  document.title = "Invoice Details | Swipe36 - React Admin & Dashboard Template";
   //Print the Invoice
   const printInvoice = () => {
     window.print();
@@ -36,7 +36,7 @@ const InvoiceDetails = () => {
                         </div>
                         <div className="flex-shrink-0 mt-sm-0 mt-3">
                           <h6><span className="text-muted fw-normal">Legal Registration No:</span><span id="legal-register-no">987654</span></h6>
-                          <h6><span className="text-muted fw-normal">Email:</span><span id="email">velzon@themesbrand.com</span></h6>
+                          <h6><span className="text-muted fw-normal">Email:</span><span id="email">Swipe36@themesbrand.com</span></h6>
                           <h6><span className="text-muted fw-normal">Website:</span> <Link to="https://themesbrand.com/" className="link-primary" target="_blank" id="website">www.themesbrand.com</Link></h6>
                           <h6 className="mb-0"><span className="text-muted fw-normal">Contact No: </span><span id="contact-no"> +(01) 234 6789</span></h6>
                         </div>
@@ -164,7 +164,7 @@ const InvoiceDetails = () => {
                               <td className="text-end">$44.99</td>
                             </tr>
                             <tr>
-                              <td>Discount <small className="text-muted">(VELZON15)</small></td>
+                              <td>Discount <small className="text-muted">(Swipe3615)</small></td>
                               <td className="text-end">- $53.99</td>
                             </tr>
                             <tr>

@@ -24,7 +24,7 @@ const CoverLockScreen = () => {
         }
     });
 
-    document.title = "Lock Screen | Velzon - React Admin & Dashboard Template";
+    document.title = "Lock Screen | Swipe36 - React Admin & Dashboard Template";
     return (
         <React.Fragment>
 
@@ -91,7 +91,7 @@ const CoverLockScreen = () => {
                         <Row>
                             <Col lg={12}>
                                 <div className="text-center">
-                                    <p className="mb-0">&copy; {new Date().getFullYear()} Velzon. Crafted with <i className="mdi mdi-heart text-danger"></i> by Themesbrand</p>
+                                    <p className="mb-0">&copy; {new Date().getFullYear()} Swipe36. Crafted with <i className="mdi mdi-heart text-danger"></i> by Themesbrand</p>
                                 </div>
                             </Col>
                         </Row>

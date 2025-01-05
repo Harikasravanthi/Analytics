@@ -12,7 +12,7 @@ import AddEditJobCandidateList from "Components/Common/AddEditJobCandidateList";
 
 
 const CandidateList = () => {
-  document.title = "Candidate List View | Velzon -  Admin & Dashboard Template";
+  document.title = "Candidate List View | Swipe36 -  Admin & Dashboard Template";
 
   const dispatch: any = useDispatch();
 

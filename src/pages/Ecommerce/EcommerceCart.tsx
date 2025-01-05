@@ -17,7 +17,7 @@ import {
 } from "reactstrap";
 
 const EcommerceCart = () => {
-  document.title = "Shopping Cart | Velzon - React Admin & Dashboard Template";
+  document.title = "Shopping Cart | Swipe36 - React Admin & Dashboard Template";
 
   const [productList, setproductList] = useState(shoppingCart);
   const [charge, setCharge] = useState<any>(0);
@@ -258,7 +258,7 @@ const EcommerceCart = () => {
                           <tr>
                             <td>
                               Discount{" "}
-                              <span className="text-muted">(VELZON15)</span> :{" "}
+                              <span className="text-muted">(Swipe3615)</span> :{" "}
                             </td>
                             <td className="text-end" id="cart-discount">
                               - $ {dis}

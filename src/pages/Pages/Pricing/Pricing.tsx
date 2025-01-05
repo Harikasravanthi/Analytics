@@ -14,7 +14,7 @@ const Pricing = () => {
             setActiveTab(tab);
         }
     };
-    document.title = "Pricing | Velzon - React Admin & Dashboard Template";
+    document.title = "Pricing | Swipe36 - React Admin & Dashboard Template";
     return (
         <React.Fragment>
             <div className="page-content">

@@ -11,7 +11,7 @@ import StoreVisits from "./StoreVisits";
 import TopSellers from "./TopSellers";
 
 const DashboardEcommerce = () => {
-  document.title = "Dashboard | Velzon - React Admin & Dashboard Template";
+  document.title = "Dashboard | Swipe36 - React Admin & Dashboard Template";
 
   const [rightColumn, setRightColumn] = useState<boolean>(true);
   const toggleRightColumn = () => {

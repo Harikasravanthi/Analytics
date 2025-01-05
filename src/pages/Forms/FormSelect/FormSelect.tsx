@@ -106,7 +106,7 @@ const options = [
 ];
 
 const FormSelect = () => {
-    document.title = "Form Select | Velzon - React Admin & Dashboard Template";
+    document.title = "Form Select | Swipe36 - React Admin & Dashboard Template";
     const [selectedSingle, setSelectedSingle] = useState<any>(null);
     const [selectedGroup, setSelectedGroup] = useState<any>(null);
     const [selectedGroup2, setSelectedGroup2] = useState<any>(null);

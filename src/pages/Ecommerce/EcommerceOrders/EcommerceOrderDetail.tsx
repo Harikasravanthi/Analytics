@@ -18,7 +18,7 @@ import EcommerceOrderProduct from "./EcommerceOrderProduct";
 import avatar3 from "../../../assets/images/users/avatar-3.jpg";
 
 const EcommerceOrderDetail = (props:any) => {
-  document.title = "Order Details | Velzon - React Admin & Dashboard Template";
+  document.title = "Order Details | Swipe36 - React Admin & Dashboard Template";
   const [col1, setcol1] = useState<boolean>(true);
   const [col2, setcol2] = useState<boolean>(true);
   const [col3, setcol3] = useState<boolean>(true);
@@ -87,7 +87,7 @@ const EcommerceOrderDetail = (props:any) => {
                               <tr>
                                 <td>
                                   Discount{" "}
-                                  <span className="text-muted">(VELZON15)</span>{" "}
+                                  <span className="text-muted">(Swipe3615)</span>{" "}
                                   : :
                                 </td>
                                 <td className="text-end">-$53.99</td>

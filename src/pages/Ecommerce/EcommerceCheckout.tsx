@@ -30,7 +30,7 @@ import { orderSummary } from "../../common/data/ecommerce";
 import { Link } from "react-router-dom";
 
 const EcommerceCheckout = () => {
-  document.title = "Checkout | Velzon - React Admin & Dashboard Template";
+  document.title = "Checkout | Swipe36 - React Admin & Dashboard Template";
 
   const [selectedCountry, setselectedCountry] = useState<any>(null);
   const [selectedState, setselectedState] = useState<any>(null);
@@ -796,7 +796,7 @@ const EcommerceCheckout = () => {
                         <tr>
                           <td colSpan={2}>
                             Discount{" "}
-                            <span className="text-muted">(VELZON15)</span> :{" "}
+                            <span className="text-muted">(Swipe3615)</span> :{" "}
                           </td>
                           <td className="text-end">- $ 50.00</td>
                         </tr>

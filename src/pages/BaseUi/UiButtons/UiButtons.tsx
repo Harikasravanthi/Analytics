@@ -37,7 +37,7 @@ import {
 } from './UiButtonCode';
 
 const UiButtons = () => {
-    document.title = "Buttons | Velzon - React Admin & Dashboard Template";
+    document.title = "Buttons | Swipe36 - React Admin & Dashboard Template";
     const favouriteBtn = (ele:any) => {
         if (ele.closest("button").classList.contains("active")) {
             ele.closest("button").classList.remove("active");

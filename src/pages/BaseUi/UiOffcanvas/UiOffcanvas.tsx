@@ -28,7 +28,7 @@ import img11 from "../../../assets/images/small/img-11.jpg";
 import img12 from "../../../assets/images/small/img-12.jpg";
 
 const UiOffcanvas = () => {
-    document.title = "Offcanvas | Velzon - React Admin & Dashboard Template";
+    document.title = "Offcanvas | Swipe36 - React Admin & Dashboard Template";
 
     const [open, setOpen] = useState<boolean>(false);
     const [isTop, setIsTop] = useState<boolean>(false);
@@ -248,7 +248,7 @@ const UiOffcanvas = () => {
                                 </div>
                                 <div className="flex-grow-1 ms-3">
                                     <h6 className="mb-1">Bethany Johnson</h6>
-                                    <p className="text-muted mb-2">added a new member to velzon dashboard</p>
+                                    <p className="text-muted mb-2">added a new member to Swipe36 dashboard</p>
                                     <small className="mb-0 text-muted">19 Nov</small>
                                 </div>
                             </div>
@@ -529,7 +529,7 @@ const UiOffcanvas = () => {
                                 </div>
                                 <div className="flex-grow-1 ms-3">
                                     <h6 className="mb-1">Bethany Johnson</h6>
-                                    <p className="text-muted mb-2">added a new member to velzon dashboard</p>
+                                    <p className="text-muted mb-2">added a new member to Swipe36 dashboard</p>
                                     <small className="mb-0 text-muted">19 Nov</small>
                                 </div>
                             </div>
@@ -807,7 +807,7 @@ const UiOffcanvas = () => {
                                 </div>
                                 <div className="flex-grow-1 ms-3">
                                     <h6 className="mb-1">Bethany Johnson</h6>
-                                    <p className="text-muted mb-2">added a new member to velzon dashboard</p>
+                                    <p className="text-muted mb-2">added a new member to Swipe36 dashboard</p>
                                     <small className="mb-0 text-muted">19 Nov</small>
                                 </div>
                             </div>
@@ -963,7 +963,7 @@ const UiOffcanvas = () => {
                                     </div>
                                     <div className="flex-grow-1 ms-3">
                                         <h6 className="mb-1">Bethany Johnson</h6>
-                                        <p className="text-muted mb-2">added a new member to velzon dashboard</p>
+                                        <p className="text-muted mb-2">added a new member to Swipe36 dashboard</p>
                                         <small className="mb-0 text-muted">19 Nov</small>
                                     </div>
                                 </div>
@@ -1117,7 +1117,7 @@ const UiOffcanvas = () => {
                                     </div>
                                     <div className="flex-grow-1 ms-3">
                                         <h6 className="mb-1">Bethany Johnson</h6>
-                                        <p className="text-muted mb-2">added a new member to velzon dashboard</p>
+                                        <p className="text-muted mb-2">added a new member to Swipe36 dashboard</p>
                                         <small className="mb-0 text-muted">19 Nov</small>
                                     </div>
                                 </div>
@@ -1270,7 +1270,7 @@ const UiOffcanvas = () => {
                                 </div>
                                 <div className="flex-grow-1 ms-3">
                                     <h6 className="mb-1">Bethany Johnson</h6>
-                                    <p className="text-muted mb-2">added a new member to velzon dashboard</p>
+                                    <p className="text-muted mb-2">added a new member to Swipe36 dashboard</p>
                                     <small className="mb-0 text-muted">19 Nov</small>
                                 </div>
                             </div>

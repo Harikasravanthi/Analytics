@@ -16,7 +16,7 @@ import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css';
 registerPlugin(FilePondPluginImageExifOrientation, FilePondPluginImagePreview);
 
 const FileUpload = () => {
-  document.title = "File Upload | Velzon - React Admin & Dashboard Template";
+  document.title = "File Upload | Swipe36 - React Admin & Dashboard Template";
   const [selectedFiles, setselectedFiles] = useState<any>([]);
   const [files, setFiles] = useState<any>([]);
 

@@ -110,7 +110,7 @@ const JobCategories = () => {
   }
 
 
-  document.title = "Job Categories | Velzon -  Admin & Dashboard Template";
+  document.title = "Job Categories | Swipe36 -  Admin & Dashboard Template";
 
   return (
     <React.Fragment>
