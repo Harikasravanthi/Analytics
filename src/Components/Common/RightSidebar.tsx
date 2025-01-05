@@ -163,12 +163,12 @@ const RightSidebar = (props: any) => {
             </div>}
 
             <div>
-                <div className="customizer-setting d-none d-md-block">
+             {/*    <div className="customizer-setting d-none d-md-block">
                     <div onClick={toggleLeftCanvas} className="btn-info rounded-pill shadow-lg btn btn-icon btn-lg p-2 rounded-pill">
                         <i className='mdi mdi-spin mdi-cog-outline fs-22'></i>
                     </div>
-                </div>
-                <Offcanvas isOpen={open} toggle={toggleLeftCanvas} direction='end'>
+                </div> */}
+                {/* <Offcanvas isOpen={open} toggle={toggleLeftCanvas} direction='end'>
                     <OffcanvasHeader className="d-flex align-items-center bg-primary bg-gradient p-3 offcanvas-header-dark" toggle={toggleLeftCanvas}>
                         <span className="m-0 me-2 text-white">Theme Customizer</span>
                     </OffcanvasHeader>
@@ -1235,13 +1235,13 @@ const RightSidebar = (props: any) => {
                                                             </span>
                                                         </span>
                                                     </span>
-                                                    {/* <!-- <div id="preloader"> --> */}
+                                                  
                                                     <div id="status" className="d-flex align-items-center justify-content-center">
                                                         <div className="spinner-border text-primary avatar-xxs m-auto" role="status">
                                                             <span className="visually-hidden">Loading...</span>
                                                         </div>
                                                     </div>
-                                                    {/* <!-- </div> --> */}
+                                                
                                                 </label>
                                             </div>
                                             <h5 className="fs-13 text-center mt-2">Enable</h5>
@@ -1289,7 +1289,7 @@ const RightSidebar = (props: any) => {
 
                     </OffcanvasBody>
 
-                </Offcanvas>
+                </Offcanvas> */}
             </div>
         </React.Fragment>
     );

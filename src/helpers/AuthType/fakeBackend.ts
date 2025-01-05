@@ -10,8 +10,6 @@ import {
   messages,
   projectList,
   sellersList,
-  transactions,
-  CryptoOrders,
   deals,
   mailbox,
   allData,
@@ -41,14 +39,6 @@ import {
   monthRevenueData,
   halfYearRevenueData,
   yearRevenueData,
-  btcPortfolioData,
-  usdPortfolioData,
-  euroPortfolioData,
-  MarketGraphAll,
-  MarketGraphYear,
-  MarketGraphMonth,
-  MarketGraphWeek,
-  MarketGraphHour,
   allProjectData,
   monthProjectData,
   halfyearProjectData,
@@ -57,10 +47,6 @@ import {
   lastWeekData,
   lastMonthData,
   lastquarterData,
-  allMarketplaceData,
-  monthMarketplaceData,
-  halfyearMarketplaceData,
-  yearMarketplaceData,
   todayaudiencesCountryData,
   lastWeekaudiencesCountryData,
   lastMonthaudiencesCountryData,
@@ -1046,35 +1032,6 @@ const fakeBackend = () => {
       });
     });
   });
-
-  // Crypto > Transaction
-  mock.onGet(url.GET_TRANSACTION_LIST).reply(() => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        if (transactions) {
-          // Passing fake JSON data as response
-          resolve([200, transactions]);
-        } else {
-          reject([400, "Cannot get Transactions Data"]);
-        }
-      });
-    });
-  });
-
-  // Crypto > Orders
-  mock.onGet(url.GET_ORDRER_LIST).reply(() => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        if (CryptoOrders) {
-          // Passing fake JSON data as response
-          resolve([200, CryptoOrders]);
-        } else {
-          reject([400, "Cannot get Order Data"]);
-        }
-      });
-    });
-  });
-
   // CRM > Deals
   mock.onGet(url.GET_DEALS).reply(() => {
     return new Promise((resolve, reject) => {
@@ -1613,113 +1570,6 @@ const fakeBackend = () => {
     });
   });
 
-  // Dashboard Crypto
-  // Portfolio
-  mock.onGet(url.GET_BTCPORTFOLIO_DATA).reply(() => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        if (btcPortfolioData) {
-          // Passing fake JSON data as response
-          resolve([200, btcPortfolioData]);
-        } else {
-          reject([400, "Cannot get BTC Data"]);
-        }
-      });
-    });
-  });
-
-  mock.onGet(url.GET_USDPORTFOLIO_DATA).reply(() => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        if (usdPortfolioData) {
-          // Passing fake JSON data as response
-          resolve([200, usdPortfolioData]);
-        } else {
-          reject([400, "Cannot get USD Data"]);
-        }
-      });
-    });
-  });
-
-  mock.onGet(url.GET_EUROPORTFOLIO_DATA).reply(() => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        if (euroPortfolioData) {
-          // Passing fake JSON data as response
-          resolve([200, euroPortfolioData]);
-        } else {
-          reject([400, "Cannot get EURO Data"]);
-        }
-      });
-    });
-  });
-
-  // Market Graph
-  mock.onGet(url.GET_ALLMARKETDATA_DATA).reply(() => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        if (MarketGraphAll) {
-          // Passing fake JSON data as response
-          resolve([200, MarketGraphAll]);
-        } else {
-          reject([400, "Cannot get All Market Data"]);
-        }
-      });
-    });
-  });
-
-  mock.onGet(url.GET_YEARMARKET_DATA).reply(() => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        if (MarketGraphYear) {
-          // Passing fake JSON data as response
-          resolve([200, MarketGraphYear]);
-        } else {
-          reject([400, "Cannot get Year Market Data"]);
-        }
-      });
-    });
-  });
-
-  mock.onGet(url.GET_MONTHMARKET_DATA).reply(() => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        if (MarketGraphMonth) {
-          // Passing fake JSON data as response
-          resolve([200, MarketGraphMonth]);
-        } else {
-          reject([400, "Cannot get Month Market Data"]);
-        }
-      });
-    });
-  });
-
-  mock.onGet(url.GET_WEEKMARKET_DATA).reply(() => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        if (MarketGraphWeek) {
-          // Passing fake JSON data as response
-          resolve([200, MarketGraphWeek]);
-        } else {
-          reject([400, "Cannot get Week Market Data"]);
-        }
-      });
-    });
-  });
-
-  mock.onGet(url.GET_HOURMARKET_DATA).reply(() => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        if (MarketGraphHour) {
-          // Passing fake JSON data as response
-          resolve([200, MarketGraphHour]);
-        } else {
-          reject([400, "Cannot get Hour Market Data"]);
-        }
-      });
-    });
-  });
-
   // Dashboard Project
   // Project Overview
   mock.onGet(url.GET_ALLPROJECT_DATA).reply(() => {
@@ -1822,60 +1672,6 @@ const fakeBackend = () => {
           resolve([200, lastquarterData]);
         } else {
           reject([400, "Cannot get Last Quarter Chart Data"]);
-        }
-      });
-    });
-  });
-
-  // Dashboard NFT
-  // Marketplace
-  mock.onGet(url.GET_ALLMARKETPLACE_DATA).reply(() => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        if (allMarketplaceData) {
-          // Passing fake JSON data as response
-          resolve([200, allMarketplaceData]);
-        } else {
-          reject([400, "Cannot get All Chart Data"]);
-        }
-      });
-    });
-  });
-
-  mock.onGet(url.GET_MONTHMARKETPLACE_DATA).reply(() => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        if (monthMarketplaceData) {
-          // Passing fake JSON data as response
-          resolve([200, monthMarketplaceData]);
-        } else {
-          reject([400, "Cannot get Month Chart Data"]);
-        }
-      });
-    });
-  });
-
-  mock.onGet(url.GET_HALFYEARMARKETPLACE_DATA).reply(() => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        if (halfyearMarketplaceData) {
-          // Passing fake JSON data as response
-          resolve([200, halfyearMarketplaceData]);
-        } else {
-          reject([400, "Cannot get Half Year Chart Data"]);
-        }
-      });
-    });
-  });
-
-  mock.onGet(url.GET_YEARMARKETPLACE_DATA).reply(() => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        if (yearMarketplaceData) {
-          // Passing fake JSON data as response
-          resolve([200, yearMarketplaceData]);
-        } else {
-          reject([400, "Cannot get Year Chart Data"]);
         }
       });
     });

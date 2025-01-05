@@ -123,19 +123,10 @@ const Layout = (props : any) => {
         }
     }
 
-    useEffect(() => {
-        const humberIcon = document.querySelector(".hamburger-icon") as HTMLElement;
-        if (sidebarVisibilitytype === 'show' || layoutType === "vertical" || layoutType === "twocolumn") {
-            humberIcon.classList.remove('open');
-        } else {
-            humberIcon && humberIcon.classList.add('open');
-        }
-    }, [sidebarVisibilitytype, layoutType]);
-
     return (
         <React.Fragment>
             <div id="layout-wrapper">
-                <Header
+                 <Header
                     headerClass={headerClass}
                     layoutModeType={layoutModeType}
                     onChangeLayoutMode={onChangeLayoutMode} />

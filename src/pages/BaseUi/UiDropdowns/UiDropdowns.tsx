@@ -15,9 +15,6 @@ import avatar3 from "../../../assets/images/users/avatar-3.jpg";
 import avatar6 from "../../../assets/images/users/avatar-6.jpg";
 import avatar8 from "../../../assets/images/users/avatar-8.jpg";
 
-import bell from "../../../assets/images/svg/bell.svg";
-
-
 import { SingleButtonDropdownExample, ColorDropdownExample, SplitButtonDropdownExample, SizingDropdownExample, DarkDropdownExample, AlignDropdownExample, OptionDropdownExample, AutoCloseDropdownExample, MenuItemDropdownExample, MenuContentDropdownExample, NotificationDropdownExample } from './UiDropdownsCode';
 
 const UiDropdowns = () => {
@@ -1210,9 +1207,7 @@ const UiDropdowns = () => {
                                                         </TabPane>
 
                                                         <TabPane tabId="3" id="alerts-tab1" className="p-4">
-                                                            <div className="w-50 pt-3 mx-auto">
-                                                                <img src={bell} className="img-fluid" alt="user-pic" />
-                                                            </div>
+                                                           
                                                             <div className="text-center pb-5 mt-2">
                                                                 <h6 className="fs-18 fw-semibold lh-base">Hey! You have no any notifications </h6>
                                                             </div>
@@ -1426,9 +1421,7 @@ const UiDropdowns = () => {
                                                         </TabPane>
 
                                                         <TabPane tabId="3" id="alerts-tab2" className="p-4">
-                                                            <div className="w-50 pt-3 mx-auto">
-                                                                <img src={bell} className="img-fluid" alt="user-pic" />
-                                                            </div>
+                                                           
                                                             <div className="text-center pb-5 mt-2">
                                                                 <h6 className="fs-18 fw-semibold lh-base">Hey! You have no any notifications </h6>
                                                             </div>
@@ -1642,9 +1635,7 @@ const UiDropdowns = () => {
                                                         </TabPane>
 
                                                         <TabPane tabId="3" id="alerts-tab3" className="p-4">
-                                                            <div className="w-50 pt-3 mx-auto">
-                                                                <img src={bell} className="img-fluid" alt="user-pic" />
-                                                            </div>
+                                                           
                                                             <div className="text-center pb-5 mt-2">
                                                                 <h6 className="fs-18 fw-semibold lh-base">Hey! You have no any notifications </h6>
                                                             </div>

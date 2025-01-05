@@ -7,7 +7,6 @@ import BreadCrumb from '../../Components/Common/BreadCrumb';
 import TileBoxs from './TileBoxs';
 import OtherWidgets from './OtherWidgets';
 import UpcomingActivity from './UpcomingActivities';
-import ChartMapWidgets from './Chart&MapWidgets';
 import EcommerceWidgets from './EcommerenceWidget';
 import CreditCard from './Creaditcard';
 
@@ -28,9 +27,6 @@ const Widgets = () => {
 
                     {/* Upcoming Activity */}
                     <UpcomingActivity />
-
-                    {/* Chart & Map Widgets */}
-                    <ChartMapWidgets />
 
                     {/* Chart & EcommerceWidgets  */}
                     <EcommerceWidgets />

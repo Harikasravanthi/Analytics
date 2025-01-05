@@ -6,9 +6,8 @@ import DashboardAnalytics from "../pages/DashboardAnalytics";
 import DashboardCrm from "../pages/DashboardCrm";
 import DashboardEcommerce from "../pages/DashboardEcommerce";
 import DashboardJob from "../pages/DashboardJob/";
-import DashboardCrypto from "../pages/DashboardCrypto";
 import DashboardProject from "../pages/DashboardProject";
-import DashboardNFT from "../pages/DashboardNFT";
+
 
 //Calendar
 import Calendar from "../pages/Calendar";
@@ -30,14 +29,6 @@ import CreateProject from "../pages/Projects/CreateProject";
 //Task
 import TaskDetails from "../pages/Tasks/TaskDetails";
 import TaskList from "../pages/Tasks/TaskList";
-
-//Transactions
-import Transactions from '../pages/Crypto/Transactions';
-import BuySell from '../pages/Crypto/BuySell';
-import CryproOrder from '../pages/Crypto/CryptoOrder';
-import MyWallet from '../pages/Crypto/MyWallet';
-import ICOList from '../pages/Crypto/ICOList';
-import KYCVerification from '../pages/Crypto/KYCVerification';
 
 //Crm Pages
 import CrmCompanies from "../pages/Crm/CrmCompanies";
@@ -65,17 +56,6 @@ import EcommerceCart from "../pages/Ecommerce/EcommerceCart";
 import EcommerceCheckout from "../pages/Ecommerce/EcommerceCheckout";
 import EcommerceSellers from "../pages/Ecommerce/EcommerceSellers/index";
 import EcommerceSellerDetail from "../pages/Ecommerce/EcommerceSellers/EcommerceSellerDetail";
-
-// NFT Marketplace Pages
-import Marketplace from "../pages/NFTMarketplace/Marketplace";
-import Collections from "../pages/NFTMarketplace/Collections";
-import CreateNFT from "../pages/NFTMarketplace/CreateNFT";
-import Creators from "../pages/NFTMarketplace/Creators";
-import ExploreNow from "../pages/NFTMarketplace/ExploreNow";
-import ItemDetails from "../pages/NFTMarketplace/Itemdetails";
-import LiveAuction from "../pages/NFTMarketplace/LiveAuction";
-import Ranking from "../pages/NFTMarketplace/Ranking";
-import WalletConnect from "../pages/NFTMarketplace/WalletConnect";
 
 // Base Ui
 import UiAlerts from "../pages/BaseUi/UiAlerts/UiAlerts";
@@ -137,7 +117,6 @@ import BoxIcons from "../pages/Icons/BoxIcons/BoxIcons";
 import MaterialDesign from "../pages/Icons/MaterialDesign/MaterialDesign";
 import FeatherIcons from "../pages/Icons/FeatherIcons/FeatherIcons";
 import LineAwesomeIcons from "../pages/Icons/LineAwesomeIcons/LineAwesomeIcons";
-import CryptoIcons from "../pages/Icons/CryptoIcons/CryptoIcons";
 
 //Maps
 import GoogleMaps from "../pages/Maps/GoogleMaps/GoogleMaps";
@@ -224,10 +203,6 @@ import PrivecyPolicy from '../pages/Pages/PrivacyPolicy';
 import TermsCondition from '../pages/Pages/TermsCondition';
 import JobLanding from "../pages/Job_Landing/Job";
 
-// Landing Index
-import OnePage from "../pages/Landing/OnePage";
-import NFTLanding from "../pages/Landing/NFTLanding";
-
 // User Profile
 import UserProfile from "../pages/Authentication/user-profile";
 
@@ -248,9 +223,7 @@ const authProtectedRoutes = [
   { path: "/dashboard-crm", component: <DashboardCrm /> },
   { path: "/dashboard", component: <DashboardEcommerce /> },
   { path: "/index", component: <DashboardEcommerce /> },
-  { path: "/dashboard-crypto", component: <DashboardCrypto /> },
   { path: "/dashboard-projects", component: <DashboardProject /> },
-  { path: "/dashboard-nft", component: <DashboardNFT /> },
   { path : "/dashboard-job", component : <DashboardJob /> },
   { path: "/dashboard-blog", component: <DashboardBlog /> },
 
@@ -304,25 +277,6 @@ const authProtectedRoutes = [
   //Supports Tickets
   { path: "/apps-tickets-list", component: <ListView /> },
   { path: "/apps-tickets-details", component: <TicketsDetails /> },
-
-  //transactions
-  { path: "/apps-crypto-transactions", component: <Transactions /> },
-  { path: "/apps-crypto-buy-sell", component: <BuySell /> },
-  { path: "/apps-crypto-orders", component: <CryproOrder /> },
-  { path: "/apps-crypto-wallet", component: <MyWallet /> },
-  { path: "/apps-crypto-ico", component: <ICOList /> },
-  { path: "/apps-crypto-kyc", component: <KYCVerification /> },
-
-  // NFT Marketplace
-  { path: "/apps-nft-marketplace", component: <Marketplace /> },
-  { path: "/apps-nft-collections", component: <Collections /> },
-  { path: "/apps-nft-create", component: <CreateNFT /> },
-  { path: "/apps-nft-creators", component: <Creators /> },
-  { path: "/apps-nft-explore", component: <ExploreNow /> },
-  { path: "/apps-nft-item-details", component: <ItemDetails /> },
-  { path: "/apps-nft-auction", component: <LiveAuction /> },
-  { path: "/apps-nft-ranking", component: <Ranking /> },
-  { path: "/apps-nft-wallet", component: <WalletConnect /> },
 
   //charts
   { path: "/charts-apex-line", component: <LineCharts /> },
@@ -411,7 +365,6 @@ const authProtectedRoutes = [
   { path: "/icons-materialdesign", component: <MaterialDesign /> },
   { path: "/icons-feather", component: <FeatherIcons /> },
   { path: "/icons-lineawesome", component: <LineAwesomeIcons /> },
-  { path: "/icons-crypto", component: <CryptoIcons /> },
 
   //Maps
   { path: "/maps-google", component: <GoogleMaps /> },
@@ -489,8 +442,6 @@ const publicRoutes = [
   { path: "/pages-maintenance", component: <Maintenance /> },
   { path: "/pages-coming-soon", component: <ComingSoon /> },
 
-  { path: "/landing", component: <OnePage /> },
-  { path: "/nft-landing", component: <NFTLanding /> },
   { path : "/job-landing" , component: <JobLanding /> },
 
   { path: "/auth-pass-change-basic", component: <BasicPasswCreate /> },

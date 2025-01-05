@@ -8,11 +8,6 @@ import avatar6 from "../../assets/images/users/avatar-6.jpg";
 import avatar7 from "../../assets/images/users/avatar-7.jpg";
 import avatar8 from "../../assets/images/users/avatar-8.jpg";
 
-import btcCoin from "../../assets/images/svg/crypto-icons/btc.svg";
-import ltcCoin from "../../assets/images/svg/crypto-icons/ltc.svg";
-import ethCoin from "../../assets/images/svg/crypto-icons/eth.svg";
-import dashCoin from "../../assets/images/svg/crypto-icons/dash.svg";
-
 import image3 from "../../assets/images/companies/img-3.png";
 import image4 from "../../assets/images/companies/img-4.png";
 import image6 from "../../assets/images/companies/img-6.png";
@@ -578,53 +573,6 @@ const widgetsAudiences = [
     },
 ];
 
-const widgetsPortfolio = [
-    {
-        id: 1,
-        img: btcCoin,
-        label: "Bitcoin",
-        coinName: "BTC",
-        coinVolume: "0.00584875",
-        badgeClass: "primary",
-        price: "$19,405.12",
-        priceClass: "success",
-        coinNameClass:"primary"
-    },
-    {
-        id: 2,
-        img: ethCoin,
-        label: "Ethereum",
-        coinName: "ETH",
-        coinVolume: "2.25842108",
-        badgeClass: "info",
-        price: "$40552.18",
-        priceClass: "danger",
-        coinNameClass:"info"
-    },
-    {
-        id: 3,
-        img: ltcCoin,
-        label: "Litecoin",
-        coinName: "LTC",
-        coinVolume: "10.58963217",
-        badgeClass: "warning",
-        price: "$15824.58",
-        priceClass: "success",
-        coinNameClass:"warning"
-    },
-    {
-        id: 4,
-        img: dashCoin,
-        label: "Dash",
-        coinName: "DASH",
-        coinVolume: "204.28565885",
-        badgeClass: "success",
-        price: "$30635.84",
-        priceClass: "success",
-        coinNameClass:"success"
-    },
-];
-
 const ecommerceWidget =
     [
         {
@@ -673,7 +621,6 @@ export {
     widgetsActivities,
     widgetsTasks,
     widgetsAudiences,
-    widgetsPortfolio,
     otherWidgets2,
     ecommerceWidget
 };

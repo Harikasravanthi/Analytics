@@ -98,20 +98,17 @@ const Header = ({ onChangeLayoutMode, layoutModeType, headerClass }:any) => {
                                 </Link>
                             </div>
 
-                            <button
-                                onClick={toogleMenuBtn}
-                                type="button"
-                                className="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger"
-                                id="topnav-hamburger-icon">
-                                <span className="hamburger-icon">
+                            
+                               
+                               
+                                    <span><h3>Command Center</h3></span>
                                     <span></span>
                                     <span></span>
-                                    <span></span>
-                                </span>
-                            </button>
+                            
+                           
 
 
-                            <SearchOption />
+                          {/*  <SearchOption /> */}
                         </div>
 
                         <div className="d-flex align-items-center">
@@ -134,29 +131,29 @@ const Header = ({ onChangeLayoutMode, layoutModeType, headerClass }:any) => {
                                 </DropdownMenu>
                             </Dropdown>
 
-                            {/* LanguageDropdown */}
+                            {/* LanguageDropdown 
                             <LanguageDropdown />
 
-                            {/* WebAppsDropdown */}
+                            {/* WebAppsDropdown 
                             <WebAppsDropdown />
 
-                            {/* MyCartDropdwon */}
+                            {/* MyCartDropdwon 
                             <MyCartDropdown />
 
-                            {/* FullScreenDropdown */}
-                            <FullScreenDropdown />
+                            {/* FullScreenDropdown 
+                            <FullScreenDropdown /> */}
 
-                            {/* Dark/Light Mode set */}
+                            {/* Dark/Light Mode set 
                             <LightDark
                                 layoutMode={layoutModeType}
                                 onChangeLayoutMode={onChangeLayoutMode}
                             />
 
-                            {/* NotificationDropdown */}
+                            {/* NotificationDropdown 
                             <NotificationDropdown />
 
-                            {/* ProfileDropdown */}
-                            <ProfileDropdown />
+                            {/* ProfileDropdown 
+                            <ProfileDropdown />*/}
                         </div>
                     </div>
                 </div>
