@@ -101,7 +101,7 @@ const Header = ({ onChangeLayoutMode, layoutModeType, headerClass }:any) => {
                             
                                
                                
-                                    <span><h3>Command Center</h3></span>
+                                    <span className='mt-5'><h3>Command Center</h3></span>
                                     <span></span>
                                     <span></span>
                             

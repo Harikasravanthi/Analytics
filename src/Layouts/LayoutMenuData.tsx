@@ -527,7 +527,7 @@ const Navdata = () => {
             id: "pages",
             label: "Forecast",
             icon: "ri-pages-line",
-            link: "/#",
+            link: "/pages-starter",
             click: function (e : any) {
                 e.preventDefault();
                 setIsPages(!isPages);

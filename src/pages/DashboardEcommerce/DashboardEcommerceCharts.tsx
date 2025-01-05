@@ -16,11 +16,11 @@ const RevenueCharts = ({dataColors, series}:any) => {
     },
     stroke: {
       curve: "straight",
-      dashArray: [0, 0, 8],
+      dashArray: [5, 5, 5],
       width: [2, 0, 2.2],
     },
     fill: {
-      opacity: [0.1, 0.9, 1],
+      opacity: [0.1, 0.5, 0.5],
     },
     markers: {
       size: [0, 0, 0],
@@ -98,7 +98,7 @@ const RevenueCharts = ({dataColors, series}:any) => {
         {
           formatter: function (y:any) {
             if (typeof y !== "undefined") {
-              return y.toFixed(0);
+              return "₦" + y.toFixed(2) + "k";
             }
             return y;
           },
@@ -106,7 +106,7 @@ const RevenueCharts = ({dataColors, series}:any) => {
         {
           formatter: function (y:any) {
             if (typeof y !== "undefined") {
-              return "$" + y.toFixed(2) + "k";
+              return "₦" + y.toFixed(2) + "k";
             }
             return y;
           },
@@ -114,7 +114,7 @@ const RevenueCharts = ({dataColors, series}:any) => {
         {
           formatter: function (y:any) {
             if (typeof y !== "undefined") {
-              return y.toFixed(0) + " Sales";
+              return "₦" + y.toFixed(2) + "k";
             }
             return y;
           },

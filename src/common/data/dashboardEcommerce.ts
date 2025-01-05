@@ -40,7 +40,7 @@ const ecomWidgets = [
         badge: "ri-arrow-right-down-line",
         badgeClass: "danger",
         percentage: "-3.57",
-        counter: 36894,
+        counter: 165.89,
         link: "View all orders",
         bgcolor: "avatar-title bg-info-subtle rounded fs-3",
         icon: "bx bx-shopping-bag text-info",
@@ -77,6 +77,110 @@ const ecomWidgets = [
         decimals: 2,
         prefix: "$",
         suffix: "k"
+    },
+    {
+        id: 5,
+        cardColor: "warning",
+        label: "Average Revenue Per User",
+        badge: "ri-arrow-right-up-line",
+        badgeClass: "success",
+        percentage: "+3.67",
+        counter: 3.56,
+        link: "See details",
+        bgcolor: "avatar-title bg-primary-subtle rounded fs-3",
+        icon: "bx bx-pie-chart-alt-2 text-primary",
+        decimals: 2,
+        prefix: "",
+        suffix: "M"
+    },
+    {
+        id: 6,
+        cardColor: "danger",
+        label: "MRR Growth Rate",
+        badge: "ri-arrow-right-down-line",
+        badgeClass: "danger",
+        percentage: "-1.25",
+        counter: 1.14,
+        link: "See details",
+        bgcolor: "avatar-title bg-info-subtle rounded fs-3",
+        icon: "bx bx-bar-chart-square text-info",
+        decimals: 2,
+        prefix: "",
+        suffix: "%"
+    },
+    {
+        id: 7,
+        cardColor: "info",
+        label: "Other Revenue",
+        badgeClass: "success",
+        percentage: "+3.62",
+        counter: 165.89,
+        link: "Withdraw money",
+        bgcolor: "avatar-title bg-info-subtle rounded fs-3",
+        icon: "bx bx-wallet text-info",
+        decimals: 2,
+        prefix: "$",
+        suffix: "k"
+    },
+    {
+        id: 8,
+        cardColor: "warning",
+        label: "User Churn Rate",
+        badge: "ri-arrow-right-down-line",
+        badgeClass: "danger",
+        percentage: "-3.67",
+        counter: 3.56,
+        link: "See details",
+        bgcolor: "avatar-title bg-primary-subtle rounded fs-3",
+        icon: "bx bx-pie-chart-alt-2 text-primary",
+        decimals: 2,
+        prefix: "",
+        suffix: "M"
+    },
+    {
+        id: 9,
+        cardColor: "danger",
+        label: "New Customers",
+        badge: "ri-arrow-right-down-line",
+        badgeClass: "danger",
+        percentage: "-1.25",
+        counter: 1.14,
+        link: "See details",
+        bgcolor: "avatar-title bg-info-subtle rounded fs-3",
+        icon: "bx bx-bar-chart-square text-info",
+        decimals: 2,
+        prefix: "",
+        suffix: "%"
+    },
+    {
+        id: 10,
+        cardColor: "warning",
+        badge: "ri-arrow-right-down-line",
+        label: "Cancelled Orders",
+        badgeClass: "danger",
+        percentage: "-5.63",
+        counter: 165.89,
+        link: "Withdraw money",
+        bgcolor: "avatar-title bg-info-subtle rounded fs-3",
+        icon: "bx bx-wallet text-info",
+        decimals: 2,
+        prefix: "$",
+        suffix: "k"
+    },
+    {
+        id: 11,
+        cardColor: "warning",
+        label: "Fees",
+        badge: "ri-arrow-right-up-line",
+        badgeClass: "success",
+        percentage: "+3.67",
+        counter: 3.56,
+        link: "See details",
+        bgcolor: "avatar-title bg-primary-subtle rounded fs-3",
+        icon: "bx bx-pie-chart-alt-2 text-primary",
+        decimals: 2,
+        prefix: "",
+        suffix: "M"
     },
 ];
 
@@ -308,12 +412,12 @@ const topCategories = [
 // Revenue Chart Data
 const allRevenueData = [
     {
-        name: "Orders",
+        name: "Fixed",
         type: "area",
         data: [34, 65, 46, 68, 49, 61, 42, 44, 78, 52, 63, 67],
     },
     {
-        name: "Earnings",
+        name: "Total",
         type: "bar",
         data: [
             89.25, 98.58, 68.74, 108.87, 77.54, 84.03, 51.24, 28.57, 92.57, 42.36,
@@ -321,7 +425,7 @@ const allRevenueData = [
         ],
     },
     {
-        name: "Refunds",
+        name: "Variable",
         type: "line",
         data: [8, 12, 7, 17, 21, 11, 5, 9, 7, 29, 12, 35],
     },
@@ -329,12 +433,12 @@ const allRevenueData = [
 
 const monthRevenueData = [
     {
-        name: "Orders",
+        name: "Fixed",
         type: "area",
         data: [54, 85, 66, 18, 29, 31, 12, 14, 38, 72, 33, 27],
     },
     {
-        name: "Earnings",
+        name: "Total",
         type: "bar",
         data: [
             89.25, 98.58, 68.74, 108.87, 77.54, 84.03, 51.24, 28.57, 92.57, 42.36,
@@ -342,7 +446,7 @@ const monthRevenueData = [
         ],
     },
     {
-        name: "Refunds",
+        name: "Variable",
         type: "line",
         data: [18, 22, 27, 37, 41, 21, 15, 19, 27, 19, 22, 45],
     },
@@ -350,12 +454,12 @@ const monthRevenueData = [
 
 const halfYearRevenueData = [
     {
-        name: "Orders",
+        name: "Fixed",
         type: "area",
         data: [34, 65, 46, 68, 49, 61, 42, 44, 78, 52, 63, 67],
     },
     {
-        name: "Earnings",
+        name: "Total",
         type: "bar",
         data: [
             89.25, 98.58, 68.74, 108.87, 77.54, 84.03, 51.24, 28.57, 92.57, 42.36,
@@ -363,7 +467,7 @@ const halfYearRevenueData = [
         ],
     },
     {
-        name: "Refunds",
+        name: "Variable",
         type: "line",
         data: [8, 22, 87, 47, 41, 31, 5, 9, 47, 49, 32, 55],
     },
@@ -371,12 +475,12 @@ const halfYearRevenueData = [
 
 const yearRevenueData = [
     {
-        name: "Orders",
+        name: "Fixed",
         type: "area",
         data: [14, 35, 26, 38, 29, 31, 22, 24, 58, 32, 33, 77],
     },
     {
-        name: "Earnings",
+        name: "Total",
         type: "bar",
         data: [
             99.25, 88.58, 78.74, 118.87, 87.54, 94.03, 61.24, 58.57, 102.57, 62.36,
@@ -384,7 +488,7 @@ const yearRevenueData = [
         ],
     },
     {
-        name: "Refunds",
+        name: "Variable",
         type: "line",
         data: [58, 42, 47, 57, 71, 21, 15, 69, 17, 39, 52, 55],
     },

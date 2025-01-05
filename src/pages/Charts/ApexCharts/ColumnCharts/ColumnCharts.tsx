@@ -6,25 +6,25 @@ const BasicColumn = ({dataColors}:any) => {
     var chartColumnColors = getChartColorsArray(dataColors);
     const series = [
         {
-            name: "Net Profit",
+            name: "Marketing",
             data: [46, 57, 59, 54, 62, 58, 64, 60, 66],
         },
         {
-            name: "Revenue",
+            name: "Ops",
             data: [74, 83, 102, 97, 86, 106, 93, 114, 94],
         },
         {
-            name: "Free Cash Flow",
+            name: "Sales",
             data: [37, 42, 38, 26, 47, 50, 54, 55, 43],
         },
     ];
 
     var options = {
         chart: {
-            height: 350,
+            height: 360,
             type: 'bar',
             toolbar: {
-                show: false,
+                show: true,
             }
         },
         plotOptions: {
@@ -48,7 +48,7 @@ const BasicColumn = ({dataColors}:any) => {
         },
         yaxis: {
             title: {
-                text: '$ (thousands)'
+                text: '₦ (thousands)'
             }
         },
         grid: {
@@ -61,7 +61,7 @@ const BasicColumn = ({dataColors}:any) => {
         tooltip: {
             y: {
                 formatter: function (val:any) {
-                    return "$ " + val + " thousands";
+                    return "₦ " + val + "k";
                 }
             }
         }
@@ -73,7 +73,7 @@ const BasicColumn = ({dataColors}:any) => {
             series={series}
             options={options}
             type="bar"
-            height={350}
+            height={365}
         />
     );
 };

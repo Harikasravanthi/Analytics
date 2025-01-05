@@ -8,7 +8,7 @@ import getChartColorsArray from "../../../../Components/Common/ChartsDynamicColo
 const BasicLineCharts = ({ dataColors }:any) => {
     var linechartBasicColors = getChartColorsArray(dataColors);
     const series = [{
-        name: "Desktops",
+        name: "₦",
         data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
     }];
     var options = {
@@ -19,7 +19,7 @@ const BasicLineCharts = ({ dataColors }:any) => {
                 enabled: false
             },
             toolbar: {
-                show: false
+                show: true
             }
         },
         markers: {
@@ -32,14 +32,6 @@ const BasicLineCharts = ({ dataColors }:any) => {
             curve: 'straight'
         },
         colors: linechartBasicColors,
-        title: {
-            text: 'Product Trends by Month',
-            align: 'left',
-            style: {
-                fontWeight: 500,
-            },
-        },
-
         xaxis: {
             categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
         }
@@ -618,16 +610,16 @@ const LinewithDataLabels = ({ dataColors }:any) => {
 const DashedLine = ({ dataColors }:any) => {
     var DashedLineColors = getChartColorsArray(dataColors);
     var series = [{
-        name: "Session Duration",
-        data: [45, 52, 38, 24, 33, 26, 21, 20, 6, 8, 15, 10]
+        name: "Base Case",
+        data: [45, 12, 38, 24, 43, 16, 21, 30, 16, 8, 15, 10]
     },
     {
-        name: "Page Views",
-        data: [36, 42, 60, 42, 13, 18, 29, 37, 36, 51, 32, 35]
+        name: "Target",
+        data: [55, 42, 20, 42, 16, 18, 29, 27, 46, 51, 82, 35]
     },
     {
-        name: 'Total Visits',
-        data: [89, 56, 74, 98, 72, 38, 64, 46, 84, 58, 46, 49]
+        name: 'Worst',
+        data: [35, 26, 34, 28, 32, 38, 34, 46, 14, 38, 46, 49]
     }
     ];
     var options = {
@@ -638,7 +630,7 @@ const DashedLine = ({ dataColors }:any) => {
                 enabled: false
             },
             toolbar: {
-                show: false,
+                show: true,
             }
         },
         colors: DashedLineColors,
@@ -646,17 +638,11 @@ const DashedLine = ({ dataColors }:any) => {
             enabled: false
         },
         stroke: {
-            width: [3, 4, 3],
+            width: [2, 2, 2],
             curve: 'straight',
-            dashArray: [0, 8, 5]
+            dashArray: [5, 5, 5]
         },
-        title: {
-            text: 'Page Statistics',
-            align: 'left',
-            style: {
-                fontWeight: 500,
-            },
-        },
+       
         markers: {
             size: 0,
 
@@ -665,8 +651,8 @@ const DashedLine = ({ dataColors }:any) => {
             }
         },
         xaxis: {
-            categories: ['01 Jan', '02 Jan', '03 Jan', '04 Jan', '05 Jan', '06 Jan', '07 Jan', '08 Jan', '09 Jan',
-                '10 Jan', '11 Jan', '12 Jan'
+            categories: ['Jan 25', 'Feb 25', 'Mar 25', 'Apr 25', 'May 25', 'Jun 25', 'Jul 25', 'Aug 25', 'Sep25',
+                'Oct 25', 'Nov 25', 'Dec 25'
             ],
         },
         tooltip: {
@@ -680,6 +666,438 @@ const DashedLine = ({ dataColors }:any) => {
                 title: {
                     formatter: function (val:any) {
                         return val + " per session";
+                    }
+                }
+            }, {
+                title: {
+                    formatter: function (val:any) {
+                        return val;
+                    }
+                }
+            }]
+        },
+        grid: {
+            borderColor: '#f1f1f1',
+        }
+    };
+    return (
+        <React.Fragment>
+            <ReactApexChart dir="ltr"
+                options={options}
+                series={series}
+                type="line"
+                height="380"
+                className="apex-charts"
+            />
+        </React.Fragment>
+    );
+};
+
+
+const ProfitLine = ({ dataColors }:any) => {
+    var DashedLineColors = getChartColorsArray(dataColors);
+    var series = [{
+        name: "Base Case",
+        data: [36, 52, 38, 24, 33, 26, 21, 20, 6, 8, 15, 10]
+    },
+    {
+        name: "Target",
+        data: [56, 42, 60, 42, 13, 18, 29, 77, 36, 51, 32, 35]
+    },
+    {
+        name: 'Worst',
+        data: [-6, -24, -34, -38, -32, -38, -24, -26,-24, -28, -36, -39]
+    }
+    ];
+    var options = {
+        chart: {
+            height: 380,
+            type: 'line',
+            zoom: {
+                enabled: false
+            },
+            toolbar: {
+                show: true,
+            }
+        },
+        colors: DashedLineColors,
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            width: [2, 2, 2],
+            curve: 'straight',
+            dashArray: [5, 5, 5]
+        },
+       
+        markers: {
+            size: 0,
+
+            hover: {
+                sizeOffset: 6
+            }
+        },
+        xaxis: {
+            categories: ['Jan 25', 'Feb 25', 'Mar 25', 'Apr 25', 'May 25', 'Jun 25', 'Jul 25', 'Aug 25', 'Sep25',
+                'Oct 25', 'Nov 25', 'Dec 25'
+            ],
+        },
+        tooltip: {
+            y: [{
+                title: {
+                    formatter: function (val:any) {
+                        return val;
+                    }
+                }
+            }, {
+                title: {
+                    formatter: function (val:any) {
+                        return val;
+                    }
+                }
+            }, {
+                title: {
+                    formatter: function (val:any) {
+                        return val;
+                    }
+                }
+            }]
+        },
+        grid: {
+            borderColor: '#f1f1f1',
+        }
+    };
+    return (
+        <React.Fragment>
+            <ReactApexChart dir="ltr"
+                options={options}
+                series={series}
+                type="line"
+                height="380"
+                className="apex-charts"
+            />
+        </React.Fragment>
+    );
+};
+
+
+const BankBalance = ({ dataColors }:any) => {
+    var DashedLineColors = getChartColorsArray(dataColors);
+    var series = [{
+        name: "Base Case",
+        data: [100, 220, 205, 204, 303, 206, 201, 200, 60, 80, 150, 100]
+    },
+    {
+        name: "Target",
+        data: [156, 242, 260, 242, 130, 118, 129, 177, 136, 151, 132, 95]
+    },
+    {
+        name: 'Worst',
+        data: [-60, -204, -304, -308, -302, -308, -204, -206,-204, -208, -306, -309]
+    }
+    ];
+    var options = {
+        chart: {
+            height: 380,
+            type: 'line',
+            zoom: {
+                enabled: false
+            },
+            toolbar: {
+                show: true,
+            }
+        },
+        colors: DashedLineColors,
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            width: [2, 2, 2],
+            curve: 'straight',
+            dashArray: [5, 5, 5]
+        },
+       
+        markers: {
+            size: 0,
+
+            hover: {
+                sizeOffset: 6
+            }
+        },
+        xaxis: {
+            categories: ['Jan 25', 'Feb 25', 'Mar 25', 'Apr 25', 'May 25', 'Jun 25', 'Jul 25', 'Aug 25', 'Sep25',
+                'Oct 25', 'Nov 25', 'Dec 25'
+            ],
+        },
+        tooltip: {
+            y: [{
+                title: {
+                    formatter: function (val:any) {
+                        return val;
+                    }
+                }
+            }, {
+                title: {
+                    formatter: function (val:any) {
+                        return val;
+                    }
+                }
+            }, {
+                title: {
+                    formatter: function (val:any) {
+                        return val;
+                    }
+                }
+            }]
+        },
+        grid: {
+            borderColor: '#f1f1f1',
+        }
+    };
+    return (
+        <React.Fragment>
+            <ReactApexChart dir="ltr"
+                options={options}
+                series={series}
+                type="line"
+                height="380"
+                className="apex-charts"
+            />
+        </React.Fragment>
+    );
+};
+
+const Runway = ({ dataColors }:any) => {
+    var DashedLineColors = getChartColorsArray(dataColors);
+    var series = [{
+        name: "Base Case",
+        data: [16.0, 2.20, 2.05, 2.04, 3.3, 2.6, 2.1, 2.0, 2.0, 1.0, 1.0, 1.00]
+    },
+    {
+        name: "Target",
+        data: [15.6, 2.42, 2.60, 2.42, 1.30, 1.18, 1.29, 1.77, 1.36, 1.51, 1.32, 0.95]
+    },
+    {
+        name: 'Worst',
+        data: [0, 0, 0, 0, 0, 0, 0,0,0, 0, 0, 0]
+    }
+    ];
+    var options = {
+        chart: {
+            height: 380,
+            type: 'line',
+            zoom: {
+                enabled: false
+            },
+            toolbar: {
+                show: true,
+            }
+        },
+        colors: DashedLineColors,
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            width: [2, 2, 2],
+            curve: 'straight',
+            dashArray: [5, 5, 5]
+        },
+       
+        markers: {
+            size: 0,
+
+            hover: {
+                sizeOffset: 6
+            }
+        },
+        xaxis: {
+            categories: ['Jan 25', 'Feb 25', 'Mar 25', 'Apr 25', 'May 25', 'Jun 25', 'Jul 25', 'Aug 25', 'Sep25',
+                'Oct 25', 'Nov 25', 'Dec 25'
+            ],
+        },
+        tooltip: {
+            y: [{
+                title: {
+                    formatter: function (val:any) {
+                        return val;
+                    }
+                }
+            }, {
+                title: {
+                    formatter: function (val:any) {
+                        return val;
+                    }
+                }
+            }, {
+                title: {
+                    formatter: function (val:any) {
+                        return val;
+                    }
+                }
+            }]
+        },
+        grid: {
+            borderColor: '#f1f1f1',
+        }
+    };
+    return (
+        <React.Fragment>
+            <ReactApexChart dir="ltr"
+                options={options}
+                series={series}
+                type="line"
+                height="380"
+                className="apex-charts"
+            />
+        </React.Fragment>
+    );
+};
+
+const NetProfit = ({ dataColors }:any) => {
+    var DashedLineColors = getChartColorsArray(dataColors);
+    var series = [{
+        name: "Base Case",
+        data: [100, 220, 205, 204, 303, 206, 201, 200, 60, 80, 150, 100]
+    },
+    {
+        name: "Target",
+        data: [156, 242, 260, 242, 130, 118, 129, 177, 136, 151, 132, 95]
+    },
+    {
+        name: 'Worst',
+        data: [-60, -204, -304, -308, -302, -308, -204, -206,-204, -208, -306, -309]
+    }
+    ];
+    var options = {
+        chart: {
+            height: 380,
+            type: 'line',
+            zoom: {
+                enabled: false
+            },
+            toolbar: {
+                show: true,
+            }
+        },
+        colors: DashedLineColors,
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            width: [2, 2, 2],
+            curve: 'straight',
+            dashArray: [5, 5, 5]
+        },
+       
+        markers: {
+            size: 0,
+
+            hover: {
+                sizeOffset: 6
+            }
+        },
+        xaxis: {
+            categories: ['Jan 25', 'Feb 25', 'Mar 25', 'Apr 25', 'May 25', 'Jun 25', 'Jul 25', 'Aug 25', 'Sep25',
+                'Oct 25', 'Nov 25', 'Dec 25'
+            ],
+        },
+        tooltip: {
+            y: [{
+                title: {
+                    formatter: function (val:any) {
+                        return val;
+                    }
+                }
+            }, {
+                title: {
+                    formatter: function (val:any) {
+                        return val;
+                    }
+                }
+            }, {
+                title: {
+                    formatter: function (val:any) {
+                        return val;
+                    }
+                }
+            }]
+        },
+        grid: {
+            borderColor: '#f1f1f1',
+        }
+    };
+    return (
+        <React.Fragment>
+            <ReactApexChart dir="ltr"
+                options={options}
+                series={series}
+                type="line"
+                height="380"
+                className="apex-charts"
+            />
+        </React.Fragment>
+    );
+};
+
+const BurnRate = ({ dataColors }:any) => {
+    var DashedLineColors = getChartColorsArray(dataColors);
+    var series = [{
+        name: "Base Case",
+        data: [100, 220, 205, 204, 303, 206, 201, 200, 60, 80, 150, 100]
+    },
+    {
+        name: "Target",
+        data: [156, 242, 260, 242, 130, 118, 129, 177, 136, 151, 132, 95]
+    },
+    {
+        name: 'Worst',
+        data: [-60, -204, -304, -308, -302, -308, -204, -206,-204, -208, -306, -309]
+    }
+    ];
+    var options = {
+        chart: {
+            height: 380,
+            type: 'line',
+            zoom: {
+                enabled: false
+            },
+            toolbar: {
+                show: true,
+            }
+        },
+        colors: DashedLineColors,
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            width: [2, 2, 2],
+            curve: 'straight',
+            dashArray: [5, 5, 5]
+        },
+       
+        markers: {
+            size: 0,
+
+            hover: {
+                sizeOffset: 6
+            }
+        },
+        xaxis: {
+            categories: ['Jan 25', 'Feb 25', 'Mar 25', 'Apr 25', 'May 25', 'Jun 25', 'Jul 25', 'Aug 25', 'Sep25',
+                'Oct 25', 'Nov 25', 'Dec 25'
+            ],
+        },
+        tooltip: {
+            y: [{
+                title: {
+                    formatter: function (val:any) {
+                        return val;
+                    }
+                }
+            }, {
+                title: {
+                    formatter: function (val:any) {
+                        return val;
                     }
                 }
             }, {
@@ -1398,5 +1816,10 @@ export {
     MissingData,
     ChartSyncingLine,
     ChartSyncingLine2,
-    ChartSyncingArea
+    ChartSyncingArea,
+    ProfitLine,
+    BankBalance,
+    Runway,
+    NetProfit,
+    BurnRate
 };
