@@ -38,7 +38,7 @@ const BasicPasswReset = () => {
                                         <img src={logoLight} alt="" height="20" />
                                     </Link>
                                 </div>
-                                <p className="mt-3 fs-16 fw-semibold">Premium Admin & Dashboard Template</p>
+                                <p className="mt-3 fs-16 fw-semibold">Swipe36 - CFO Dashboard</p>
                             </div>
                         </Col>
                     </Row>
