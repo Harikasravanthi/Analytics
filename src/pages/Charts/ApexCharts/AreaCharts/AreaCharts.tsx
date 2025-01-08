@@ -5,7 +5,7 @@ import * as moment from "moment";
 
 import getChartColorsArray from "../../../../Components/Common/ChartsDynamicColor";
 
-const BasicAreaCharts = ({dataColors , series : propSeries}:any) => {
+const BasicAreaCharts = ({dataColors , series : propSeries , dates: propDates , handleDateIndexClick = (xAxisIndexClick : any) => {}}:any) => {
     var BasicAreaChartsColors = getChartColorsArray(dataColors);
     const series = [{
         name: "STOCK ABC",
@@ -20,6 +20,11 @@ const BasicAreaCharts = ({dataColors , series : propSeries}:any) => {
             },
             toolbar: {
                 show: false
+            },
+            events : {
+                markerClick : (event : any, chartContext : any, opts : any) => {
+                    handleDateIndexClick(opts.dataPointIndex)
+                }
             }
         },
         dataLabels: {
@@ -40,7 +45,7 @@ const BasicAreaCharts = ({dataColors , series : propSeries}:any) => {
             text: 'Price Movements',
             align: 'left'
         },
-        labels: seriesData.monthDataSeries1.dates,
+        labels: propDates ?? seriesData.monthDataSeries1.dates,
         xaxis: {
             type: 'datetime',
         },

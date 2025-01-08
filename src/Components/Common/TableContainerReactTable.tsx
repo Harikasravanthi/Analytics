@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment, ReactNode, useEffect, useState } from "react";
 import { CardBody, Col, Row, Table } from "reactstrap";
 import { Link } from "react-router-dom";
 
@@ -12,14 +12,14 @@ import {
   getFilteredRowModel,
   getPaginationRowModel,
   getSortedRowModel,
-  flexRender
-} from '@tanstack/react-table';
+  flexRender,
+} from "@tanstack/react-table";
 
-import { rankItem } from '@tanstack/match-sorter-utils';
+import { rankItem } from "@tanstack/match-sorter-utils";
 
 // Column Filter
 const Filter = ({
-  column
+  column,
 }: {
   column: Column<any, unknown>;
   table: ReactTable<any>;
@@ -30,11 +30,11 @@ const Filter = ({
     <>
       <DebouncedInput
         type="text"
-        value={(columnFilterValue ?? '') as string}
-        onChange={value => column.setFilterValue(value)}
+        value={(columnFilterValue ?? "") as string}
+        onChange={(value) => column.setFilterValue(value)}
         placeholder="Search..."
         className="w-36 border shadow rounded"
-        list={column.id + 'list'}
+        list={column.id + "list"}
       />
       <div className="h-1" />
     </>
@@ -51,7 +51,7 @@ const DebouncedInput = ({
   value: string | number;
   onChange: (value: string | number) => void;
   debounce?: number;
-} & Omit<React.InputHTMLAttributes<HTMLInputElement>, 'onChange'>) => {
+} & Omit<React.InputHTMLAttributes<HTMLInputElement>, "onChange">) => {
   const [value, setValue] = useState(initialValue);
 
   useEffect(() => {
@@ -67,7 +67,13 @@ const DebouncedInput = ({
   }, [debounce, onChange, value]);
 
   return (
-    <input {...props} value={value} id="search-bar-0" className="form-control border-0 search" onChange={e => setValue(e.target.value)} />
+    <input
+      {...props}
+      value={value}
+      id="search-bar-0"
+      className="form-control border-0 search"
+      onChange={(e) => setValue(e.target.value)}
+    />
   );
 };
 
@@ -89,6 +95,7 @@ interface TableContainerProps {
   handleContactClick?: any;
   handleTicketClick?: any;
   isBordered?: any;
+  selectedColumn?: string;
 }
 
 const TableContainer = ({
@@ -102,16 +109,16 @@ const TableContainer = ({
   thClass,
   divClass,
   SearchPlaceholder,
-  isBordered
-
+  isBordered,
+  selectedColumn,
 }: TableContainerProps) => {
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
-  const [globalFilter, setGlobalFilter] = useState('');
+  const [globalFilter, setGlobalFilter] = useState("");
 
   const fuzzyFilter: FilterFn<any> = (row, columnId, value, addMeta) => {
     const itemRank = rankItem(row.getValue(columnId), value);
     addMeta({
-      itemRank
+      itemRank,
     });
     return itemRank.passed;
   };
@@ -125,8 +132,8 @@ const TableContainer = ({
     state: {
       // columnFilters,
       // globalFilter,
-      columnPinning : {
-        left : ['heading'],
+      columnPinning: {
+        left: ["heading"],
       },
     },
     // onColumnFiltersChange: setColumnFilters,
@@ -148,7 +155,7 @@ const TableContainer = ({
     nextPage,
     previousPage,
     setPageSize,
-    getState
+    getState,
   } = table;
 
   useEffect(() => {
@@ -157,25 +164,26 @@ const TableContainer = ({
 
   return (
     <Fragment>
-      {isGlobalFilter && <Row className="mb-3">
-        <CardBody className="border border-dashed border-end-0 border-start-0">
-          <form>
-            <Row>
-              <Col sm={5}>
-                <div className="search-box me-2 mb-2 d-inline-block col-12">
-                  <DebouncedInput
-                    value={globalFilter ?? ''}
-                    onChange={value => setGlobalFilter(String(value))}
-                    placeholder={SearchPlaceholder}
-                  />
-                  <i className="bx bx-search-alt search-icon"></i>
-                </div>
-              </Col>
-            </Row>
-          </form>
-        </CardBody>
-      </Row>}
-
+      {isGlobalFilter && (
+        <Row className="mb-3">
+          <CardBody className="border border-dashed border-end-0 border-start-0">
+            <form>
+              <Row>
+                <Col sm={5}>
+                  <div className="search-box me-2 mb-2 d-inline-block col-12">
+                    <DebouncedInput
+                      value={globalFilter ?? ""}
+                      onChange={(value) => setGlobalFilter(String(value))}
+                      placeholder={SearchPlaceholder}
+                    />
+                    <i className="bx bx-search-alt search-icon"></i>
+                  </div>
+                </Col>
+              </Row>
+            </form>
+          </CardBody>
+        </Row>
+      )}
 
       <div className={divClass}>
         <Table hover className={tableClass}>
@@ -183,9 +191,19 @@ const TableContainer = ({
             {getHeaderGroups().map((headerGroup: any) => (
               <tr className={trClass} key={headerGroup.id}>
                 {headerGroup.headers.map((header: any) => (
-                  <th key={header.id} className={thClass}  {...{
-                    onClick: header.column.getToggleSortingHandler(),
-                  }}>
+                  <th
+                    key={header.id}
+                    id={`col_${header.id}`}
+                    className={`${thClass} ${
+                      selectedColumn === header.id ? "active-header" : ""
+                    }`}
+                    style={{
+                      width: "150px",
+                    }}
+                    {...{
+                      onClick: header.column.getToggleSortingHandler(),
+                    }}
+                  >
                     {header.isPlaceholder ? null : (
                       <React.Fragment>
                         {flexRender(
@@ -193,10 +211,9 @@ const TableContainer = ({
                           header.getContext()
                         )}
                         {{
-                          asc: ' ',
-                          desc: ' ',
-                        }
-                        [header.column.getIsSorted() as string] ?? null}
+                          asc: " ",
+                          desc: " ",
+                        }[header.column.getIsSorted() as string] ?? null}
                         {/* {header.column.getCanFilter() ? (
                           <div>
                             <Filter column={header.column} table={table} />
@@ -216,7 +233,21 @@ const TableContainer = ({
                 <tr key={row.id}>
                   {row.getVisibleCells().map((cell: any) => {
                     return (
-                      <td key={cell.id} style={cell?.id?.includes('day') ? {color : Math.random() > 0.5 ? 'green' : 'red'}: {}}>
+                      <td
+                        key={cell.id}
+                        className={`${
+                          cell?.column?.id === selectedColumn
+                            ? "active-row"
+                            : ""
+                        }`}
+                        style={
+                          cell?.id?.includes("day")
+                            ? {
+                                color: Math.random() > 0.5 ? "green" : "red",
+                              }
+                            : {}
+                        }
+                      >
                         {flexRender(
                           cell.column.columnDef.cell,
                           cell.getContext()

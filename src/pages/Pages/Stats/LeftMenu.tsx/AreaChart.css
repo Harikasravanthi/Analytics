@@ -1,0 +1,24 @@
+.table-card table {
+  table-layout: fixed;
+  position: relative;
+}
+/* .table-card table tbody tr td:first-child {
+  position: sticky;
+  left: 0;
+  background-color: #fff;
+}
+.table-card table thead tr th:first-child {
+  position: sticky;
+  left: 0;
+  background-color: #fff;
+} */
+
+.table-card table thead th.active-header {
+    background-color: #6078ff;
+    border-color: #6078ff;
+    color: #fff;
+}
+
+.table-card table tbody tr .active-row {
+  background-color: rgba(96,120,255,.1);
+}

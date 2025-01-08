@@ -1,6 +1,8 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { BasicAreaCharts } from "pages/Charts/ApexCharts/AreaCharts/AreaCharts";
 import TableContainer from "Components/Common/TableContainerReactTable";
+import "./AreaChart.css";
+import { Col, Row } from "reactstrap";
 
 function generateRandomTable() {
   const headings = [
@@ -14,16 +16,15 @@ function generateRandomTable() {
 
   // Define a type for the records
   type Record = {
-    heading: string;
     [key: string]: number | string; // Allow dynamic keys with number values
   };
 
   const records: Record[] = [];
 
   for (let i = 0; i < headings.length; i++) {
-    const record: Record = { heading: headings[i] };
+    const record: Record = {};
 
-    for (let day = 1; day <= 30; day++) {
+    for (let day = 1; day <= 20; day++) {
       // Generate a random value between 0 and 200
       const randomValue = Math.floor(Math.random() * 201);
       record[`day${day}`] = randomValue; // This is now valid
@@ -60,6 +61,17 @@ function generateSmoothSeriesData() {
   return prices;
 }
 
+function generateDates() {
+  const dates = [];
+
+  for (let j = 1; j < 20; j++) {
+    // Generate 20 data points
+    dates.push(`May ${j}`);
+  }
+
+  return dates;
+}
+
 const getRandomAmount = (min: any, max: any) => {
   return Number((Math.random() * (max - min) + min).toFixed(2));
 };
@@ -69,31 +81,64 @@ interface IAreaChartProps {
   showTable?: boolean;
 }
 const AreaChart = ({ title, showTable }: IAreaChartProps) => {
-  const defaultTable = useMemo(() => generateRandomTable(), []);
+  const defaultTable = useMemo(() => generateRandomTable(), [title]);
 
-  const series = generateSmoothSeriesData();
+  const series = useMemo(() => {
+    return generateSmoothSeriesData();
+  }, [title]);
+
+  const dates = useMemo(() => generateDates(), [title]);
 
   const totalAmount = Math.floor(Math.random() * 200000); // Random amount between 0 and 200,000
   const percentageChange = (Math.random() * 4 - 2).toFixed(2); // Random percentage change between -2% and +2%
   const isPositive = Number(percentageChange) >= 0;
 
-  const columns = [
-    {
-      header: "Heading",
-      accessorKey: "heading",
-      cell: (cell: any) => (
-        <span className="fw-semibold">{cell.getValue()}</span>
-      ),
-    },
-    ...Array.from({ length: 30 }, (_, index) => ({
-      header: `May ${index + 1}`,
-      accessorKey: `day${index + 1}`,
-      width: "20px",
-      renderValue: (value: any) => (
-        <span className="fw-semibold">123 {value}</span>
-      ),
-    })),
-  ];
+  const columns = useMemo(() => {
+    const columns = [
+      ...Array.from({ length: 20 }, (_, index) => ({
+        header: `May ${index + 1}`,
+        accessorKey: `day${index + 1}`,
+        width: "20px",
+        renderValue: (value: any) => (
+          <span className="fw-semibold">123 {value}</span>
+        ),
+      })),
+    ];
+
+    return columns;
+  }, [title]);
+
+  const [selectedColumn, setSelectedColumn] = useState<any>(null);
+
+  const handleDateClick = (xAxisData: any) => {
+    // Set the selected column based on the clicked date
+    setSelectedColumn(columns[xAxisData-1]?.accessorKey);
+
+    // Assuming each date corresponds to a div with an id like 'col_1', 'col_2', etc.
+    const targetId = `col_${columns[xAxisData-1]?.accessorKey}`; // Adjust this based on your actual id naming convention
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      // Scroll the target element into view
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+        inline: "start",
+      });
+
+      // Get the container that holds the scrollable elements
+      const container = targetElement.parentElement; // Adjust this if your structure is different
+
+      if (container) {
+        // Adjust the scroll position of the container
+        const offset = 150; // The offset in pixels
+        container.scrollLeft +=
+          targetElement.getBoundingClientRect().left -
+          container.getBoundingClientRect().left -
+          offset;
+      }
+    }
+  };
 
   return (
     <>
@@ -150,12 +195,68 @@ const AreaChart = ({ title, showTable }: IAreaChartProps) => {
           </select>
         </div>
       </div>
-      <BasicAreaCharts dataColors='["--vz-primary"]' series={series} />
+      <BasicAreaCharts
+        dataColors='["--vz-primary"]'
+        series={series}
+        dates={dates}
+        handleDateIndexClick={handleDateClick}
+      />
       {showTable && (
-        <div className="mt-5">
-          <div className="table-responsive table-card">
-            <TableContainer columns={columns} data={defaultTable} />
-          </div>
+        <div className="mt-5 d-flex">
+          <Row>
+            <Col md={2} lg={2} xl={2} xxl={2}>
+              <div className="table-responsive table-card">
+                <TableContainer
+                  columns={[
+                    {
+                      header: "Heading",
+                      accessorKey: "heading",
+                      cell: (cell: any) => (
+                        <span className="fw-semibold">{cell.getValue()}</span>
+                      ),
+                    },
+                  ]}
+                  data={[
+                    {
+                      heading: "New",
+                    },
+                    {
+                      heading: "Expansion",
+                    },
+                    {
+                      heading: "Reactivation",
+                    },
+                    {
+                      heading: "Contraction",
+                    },
+                    {
+                      heading: "Churn",
+                    },
+                    {
+                      heading: "Net Change",
+                    },
+                  ]}
+                />
+              </div>
+            </Col>
+            <Col md={10} lg={10} xl={10} xxl={10}>
+              <div
+                className="table-responsive table-card"
+                style={{ width: "58vw" }}
+              >
+                <TableContainer
+                  columns={columns}
+                  data={defaultTable}
+                  tableClass={""}
+                  theadClass={""}
+                  trClass={""}
+                  thClass={""}
+                  divClass={""}
+                  selectedColumn={selectedColumn}
+                />
+              </div>
+            </Col>
+          </Row>
         </div>
       )}
     </>
