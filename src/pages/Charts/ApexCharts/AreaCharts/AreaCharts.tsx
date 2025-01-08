@@ -5,11 +5,11 @@ import * as moment from "moment";
 
 import getChartColorsArray from "../../../../Components/Common/ChartsDynamicColor";
 
-const BasicAreaCharts = ({dataColors}:any) => {
+const BasicAreaCharts = ({dataColors , series : propSeries}:any) => {
     var BasicAreaChartsColors = getChartColorsArray(dataColors);
     const series = [{
         name: "STOCK ABC",
-        data: seriesData.monthDataSeries1.prices
+        data: propSeries ?? seriesData.monthDataSeries1.prices
     }];
     var options = {
         chart: {

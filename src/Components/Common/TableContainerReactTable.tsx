@@ -123,16 +123,19 @@ const TableContainer = ({
       fuzzy: fuzzyFilter,
     },
     state: {
-      columnFilters,
-      globalFilter,
+      // columnFilters,
+      // globalFilter,
+      columnPinning : {
+        left : ['heading'],
+      },
     },
-    onColumnFiltersChange: setColumnFilters,
-    onGlobalFilterChange: setGlobalFilter,
-    globalFilterFn: fuzzyFilter,
+    // onColumnFiltersChange: setColumnFilters,
+    // onGlobalFilterChange: setGlobalFilter,
+    // globalFilterFn: fuzzyFilter,
     getCoreRowModel: getCoreRowModel(),
-    getFilteredRowModel: getFilteredRowModel(),
-    getPaginationRowModel: getPaginationRowModel(),
-    getSortedRowModel: getSortedRowModel()
+    // getFilteredRowModel: getFilteredRowModel(),
+    // getPaginationRowModel: getPaginationRowModel(),
+    // getSortedRowModel: getSortedRowModel()
   });
 
   const {
@@ -194,11 +197,11 @@ const TableContainer = ({
                           desc: ' ',
                         }
                         [header.column.getIsSorted() as string] ?? null}
-                        {header.column.getCanFilter() ? (
+                        {/* {header.column.getCanFilter() ? (
                           <div>
                             <Filter column={header.column} table={table} />
                           </div>
-                        ) : null}
+                        ) : null} */}
                       </React.Fragment>
                     )}
                   </th>
@@ -213,7 +216,7 @@ const TableContainer = ({
                 <tr key={row.id}>
                   {row.getVisibleCells().map((cell: any) => {
                     return (
-                      <td key={cell.id}>
+                      <td key={cell.id} style={cell?.id?.includes('day') ? {color : Math.random() > 0.5 ? 'green' : 'red'}: {}}>
                         {flexRender(
                           cell.column.columnDef.cell,
                           cell.getContext()
@@ -228,7 +231,7 @@ const TableContainer = ({
         </Table>
       </div>
 
-      <Row className="align-items-center mt-2 g-3 text-center text-sm-start">
+      {/* <Row className="align-items-center mt-2 g-3 text-center text-sm-start">
         <div className="col-sm">
           <div className="text-muted">Showing<span className="fw-semibold ms-1">{getState().pagination.pageSize}</span> of <span className="fw-semibold">{data.length}</span> Results
           </div>
@@ -250,7 +253,7 @@ const TableContainer = ({
             </li>
           </ul>
         </div>
-      </Row>
+      </Row> */}
     </Fragment>
   );
 };

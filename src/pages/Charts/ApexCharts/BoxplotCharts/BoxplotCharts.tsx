@@ -4,9 +4,9 @@ import ReactApexChart from "react-apexcharts";
 import getChartColorsArray from "../../../../Components/Common/ChartsDynamicColor";
 
 // Candlestick Chart 
-const Basic = ({ dataColors }:any) => {
+const Basic = ({ dataColors , series : propsSeries}:any) => {
   var chartBoxBasicColors = getChartColorsArray(dataColors);
-  const series = [
+  const series = propsSeries ?? [
     {
       type: "boxPlot",
       data: [

@@ -155,7 +155,6 @@ import BlogListView from "pages/Pages/Blogs/ListView";
 import BlogGridView from "pages/Pages/Blogs/GridView";
 import PageBlogOverview from "pages/Pages/Blogs/Overview";
 import StatsIndex from "pages/Pages/Stats/StatsIndex";
-import StatsMRR from "pages/Pages/Stats/MRR/StatsMRR";
 
 const authProtectedRoutes = [
   { path: "/dashboard-analytics", component: <DashboardAnalytics /> },
