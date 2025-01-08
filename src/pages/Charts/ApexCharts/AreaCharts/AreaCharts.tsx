@@ -8,7 +8,7 @@ import getChartColorsArray from "../../../../Components/Common/ChartsDynamicColo
 const BasicAreaCharts = ({dataColors , series : propSeries , dates: propDates , handleDateIndexClick = (xAxisIndexClick : any) => {}}:any) => {
     var BasicAreaChartsColors = getChartColorsArray(dataColors);
     const series = [{
-        name: "STOCK ABC",
+        name: "Revenue",
         data: propSeries ?? seriesData.monthDataSeries1.prices
     }];
     var options = {

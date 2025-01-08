@@ -514,7 +514,7 @@ const Navdata = () => {
             id: "authentication",
             label: "Metrics",
             icon: "bx bxs-copy",
-            link: "/#",
+            link: "/stats",
             click: function (e : any) {
                 e.preventDefault();
                 setIsAuth(!isAuth);
@@ -528,19 +528,6 @@ const Navdata = () => {
             label: "Forecast",
             icon: "ri-pages-line",
             link: "/pages-starter",
-            click: function (e : any) {
-                e.preventDefault();
-                setIsPages(!isPages);
-                setIscurrentState('Pages');
-                updateIconSidebar(e);
-            },
-            stateVariables: isPages,
-        },
-        {
-            id: "Stats",
-            label: "Stats",
-            icon: "ri-pages-line",
-            link: "/stats",
             click: function (e : any) {
                 e.preventDefault();
                 setIsPages(!isPages);

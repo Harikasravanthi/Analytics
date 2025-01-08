@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 import { Link } from 'react-router-dom';
 import { Card, CardBody, Col } from 'reactstrap';
 import { ecomWidgets } from "../../common/data";
-import { BasicLineCharts } from 'pages/Charts/ApexCharts/LineCharts/LineCharts';
+import { BasicLineCharts, ZoomableTimeseries } from 'pages/Charts/ApexCharts/LineCharts/LineCharts';
 
 const Widgets = () => {
     return (
@@ -30,7 +30,7 @@ const Widgets = () => {
                                 </div>
                                 </div> 
                             <div className="align-items-end justify-content-between mt-4">
-                            <BasicLineCharts dataColors='["--vz-primary"]' />
+                            <ZoomableTimeseries dataColors='["--vz-primary"]' label={item.label}/>
                             </div>
                         </CardBody>
                     </Card>

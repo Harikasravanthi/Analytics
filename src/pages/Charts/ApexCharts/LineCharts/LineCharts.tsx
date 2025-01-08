@@ -9,7 +9,7 @@ const BasicLineCharts = ({ dataColors }:any) => {
     var linechartBasicColors = getChartColorsArray(dataColors);
     const series = [{
         name: "₦",
-        data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
+        data: [10, 41, 25,32,56,48,56,78,35, 51, 49, 62]
     }];
     var options = {
         chart: {
@@ -23,17 +23,17 @@ const BasicLineCharts = ({ dataColors }:any) => {
             }
         },
         markers: {
-            size: 4,
+            size:0,
         },
         dataLabels: {
             enabled: false
         },
         stroke: {
-            curve: 'straight'
+            curve: 'smooth'
         },
         colors: linechartBasicColors,
         xaxis: {
-            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep','Nov','Dec'],
         }
     };
     return (
@@ -49,10 +49,10 @@ const BasicLineCharts = ({ dataColors }:any) => {
     );
 };
 
-const ZoomableTimeseries = ({ dataColors }:any) => {
+const ZoomableTimeseries = ({ dataColors, label }:any) => {
     var ZoomableTimeseriesColors = getChartColorsArray(dataColors);
     const series = [{
-        name: 'XYZ MOTORS',
+        name:  label,
         data: [{
             x: new Date('2018-01-12').getTime(),
             y: 140
@@ -454,17 +454,11 @@ const ZoomableTimeseries = ({ dataColors }:any) => {
         markers: {
             size: 0,
         },
-        title: {
-            text: 'Stock Price Movement',
-            align: 'left',
-            style: {
-                fontWeight: 500,
-            },
-        },
+       
         fill: {
             type: 'gradient',
             gradient: {
-                shadeIntensity: 1,
+                shadeIntensity: 0.5,
                 inverseColors: false,
                 opacityFrom: 0.5,
                 opacityTo: 0,

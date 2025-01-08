@@ -209,7 +209,7 @@ const AreaChart = ({ title, showTable }: IAreaChartProps) => {
                 <TableContainer
                   columns={[
                     {
-                      header: "Heading",
+                      header: "Breakdown",
                       accessorKey: "heading",
                       cell: (cell: any) => (
                         <span className="fw-semibold">{cell.getValue()}</span>
