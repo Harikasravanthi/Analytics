@@ -17,6 +17,9 @@ const BasicAreaCharts = ({dataColors}:any) => {
             height: 350,
             zoom: {
                 enabled: false
+            },
+            toolbar: {
+                show: false
             }
         },
         dataLabels: {
@@ -27,7 +30,7 @@ const BasicAreaCharts = ({dataColors}:any) => {
         },
 
         title: {
-            text: 'Fundamental Analysis of Stocks',
+            text: '',
             align: 'left',
             style: {
                 fontWeight: 500,

@@ -536,7 +536,19 @@ const Navdata = () => {
             },
             stateVariables: isPages,
         },
-        
+        {
+            id: "Stats",
+            label: "Stats",
+            icon: "ri-pages-line",
+            link: "/stats",
+            click: function (e : any) {
+                e.preventDefault();
+                setIsPages(!isPages);
+                setIscurrentState('Pages');
+                updateIconSidebar(e);
+            },
+            stateVariables: isPages,
+        },
     ];
     return <React.Fragment>{menuItems}</React.Fragment>;
 };
