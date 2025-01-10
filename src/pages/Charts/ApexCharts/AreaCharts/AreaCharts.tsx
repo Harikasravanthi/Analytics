@@ -31,7 +31,17 @@ const BasicAreaCharts = ({dataColors , series : propSeries , dates: propDates , 
             enabled: false
         },
         stroke: {
-            curve: 'straight'
+            curve: 'smooth'
+        },
+        fill: {
+            type: 'gradient',
+            gradient: {
+                shadeIntensity: 0.5,
+                inverseColors: false,
+                opacityFrom: 0.5,
+                opacityTo: 0,
+                stops: [0, 90, 100]
+            },
         },
 
         title: {
@@ -41,10 +51,7 @@ const BasicAreaCharts = ({dataColors , series : propSeries , dates: propDates , 
                 fontWeight: 500,
             },
         },
-        subtitle: {
-            text: 'Price Movements',
-            align: 'left'
-        },
+       
         labels: propDates ?? seriesData.monthDataSeries1.dates,
         xaxis: {
             type: 'datetime',
