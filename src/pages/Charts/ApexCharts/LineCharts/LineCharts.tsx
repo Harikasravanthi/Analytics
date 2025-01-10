@@ -116,6 +116,10 @@ const ZoomableTimeseries = ({ dataColors, label }:any) => {
         dataLabels: {
             enabled: false
         },
+        stroke: {
+            width: 1,
+            curve: 'smooth',
+        },
         markers: {
             size: 0,
         },

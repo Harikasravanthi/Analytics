@@ -31,7 +31,8 @@ const BasicAreaCharts = ({dataColors , series : propSeries , dates: propDates , 
             enabled: false
         },
         stroke: {
-            curve: 'smooth'
+            curve: 'smooth',
+            width : 2,
         },
         fill: {
             type: 'gradient',
